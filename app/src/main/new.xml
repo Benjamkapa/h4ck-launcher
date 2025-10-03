@@ -1,0 +1,16 @@
+<!-- In app/src/main/res/layout/app_item.xml -->
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="wrap_content" android:orientation="vertical" android:gravity="center"
+    android:padding="8dp">
+
+    <ImageView android:id="@+id/app_icon_iv" android:layout_width="48dp"
+        android:layout_height="48dp" tools:src="@mipmap/ic_launcher" />
+
+    <TextView android:id="@+id/app_name_tv" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:gravity="center" android:textColor="#00FF00"
+        android:textSize="12sp" android:maxLines="2" android:ellipsize="end"
+        android:paddingTop="4dp" tools:text="App Name" />
+
+</LinearLayout>

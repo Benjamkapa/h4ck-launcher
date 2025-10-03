@@ -4,10 +4,15 @@ color matrix_background
 color matrix_dark_green
 color matrix_green
 color white
+id app_icon_iv
+id app_list_rv
+id app_name_tv
+id futuristic_status_bar
 id home_root
 id matrix_background_view
 layout activity_home
 layout activity_splash
+layout app_item
 mipmap ic_launcher
 mipmap ic_launcher_background
 mipmap ic_launcher_foreground

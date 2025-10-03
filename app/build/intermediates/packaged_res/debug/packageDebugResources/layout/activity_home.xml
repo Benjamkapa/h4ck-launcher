@@ -3,7 +3,7 @@
     android:id="@+id/home_root"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/matrix_dark_green"
+    android:background="@color/matrix_background"
     android:visibility="visible">
 
     <com.example.launcher.widgets.MatrixBackgroundView
@@ -13,6 +13,24 @@
         android:visibility="visible"
         />
 
+    <!-- ADD THIS RECYCLERVIEW to display the apps on top of everything else -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/app_list_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:clipToPadding="false"
+        android:padding="16dp" />
+
+    <com.example.launcher.widgets.FuturisticStatusBarView
+        android:id="@+id/futuristic_status_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_gravity="top" /> <!-- CHANGE THIS TO "top" -->
+
+
     <!-- Add other UI components here -->
 
 </FrameLayout>
+
+
