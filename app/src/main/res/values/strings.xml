@@ -1,0 +1,7 @@
+<resources>
+    <string name="splash_text">Welcome Back</string>
+    ```
+
+3.  Replace `"Your Splash Screen Text"` with whatever text you want to display on your splash screen (e.g., "Loading...").
+
+After adding this string resource, clean and rebuild your project. The error should now be resolved.</resources>

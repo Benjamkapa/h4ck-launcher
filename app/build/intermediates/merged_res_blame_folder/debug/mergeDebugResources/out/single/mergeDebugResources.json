@@ -1,0 +1,98 @@
+[
+    {
+        "merged": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-debug-4:\\mipmap-hdpi_ic_launcher_monochrome.png.flat",
+        "source": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-main-6:\\mipmap-hdpi\\ic_launcher_monochrome.png"
+    },
+    {
+        "merged": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-debug-4:\\mipmap-xhdpi_ic_launcher_monochrome.png.flat",
+        "source": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-main-6:\\mipmap-xhdpi\\ic_launcher_monochrome.png"
+    },
+    {
+        "merged": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-debug-4:\\mipmap-mdpi_ic_launcher_monochrome.png.flat",
+        "source": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-main-6:\\mipmap-mdpi\\ic_launcher_monochrome.png"
+    },
+    {
+        "merged": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-debug-4:\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-main-6:\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-debug-4:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-main-6:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-debug-4:\\mipmap-xxhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-main-6:\\mipmap-xxhdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-debug-4:\\layout_activity_splash.xml.flat",
+        "source": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-main-6:\\layout\\activity_splash.xml"
+    },
+    {
+        "merged": "com.example.launcher.app-debug-4:/layout_activity_home.xml.flat",
+        "source": "com.example.launcher.app-main-6:/layout/activity_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-debug-4:\\mipmap-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-main-6:\\mipmap-xhdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-debug-4:\\mipmap-xxhdpi_ic_launcher_monochrome.png.flat",
+        "source": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-main-6:\\mipmap-xxhdpi\\ic_launcher_monochrome.png"
+    },
+    {
+        "merged": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-debug-4:\\mipmap-xxhdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-main-6:\\mipmap-xxhdpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-debug-4:\\mipmap-mdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-main-6:\\mipmap-mdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-debug-4:\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-main-6:\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-debug-4:\\layout_activity_home.xml.flat",
+        "source": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-main-6:\\layout\\activity_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-debug-4:\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-main-6:\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-debug-4:\\mipmap-xhdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-main-6:\\mipmap-xhdpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-debug-4:\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-main-6:\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-debug-4:\\mipmap-hdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-main-6:\\mipmap-hdpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-debug-4:\\mipmap-xxxhdpi_ic_launcher_monochrome.png.flat",
+        "source": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-main-6:\\mipmap-xxxhdpi\\ic_launcher_monochrome.png"
+    },
+    {
+        "merged": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-debug-4:\\mipmap-mdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-main-6:\\mipmap-mdpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-debug-4:\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-main-6:\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-debug-4:\\mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-main-6:\\mipmap-xxxhdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-debug-4:\\mipmap-hdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-main-6:\\mipmap-hdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-debug-4:\\mipmap-xxxhdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-main-6:\\mipmap-xxxhdpi\\ic_launcher_background.png"
+    }
+]

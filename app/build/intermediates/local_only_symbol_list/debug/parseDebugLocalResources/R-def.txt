@@ -1,0 +1,18 @@
+R_DEF: Internal format may change without notice
+local
+color matrix_background
+color matrix_dark_green
+color matrix_green
+color white
+id home_root
+id matrix_background_view
+layout activity_home
+layout activity_splash
+mipmap ic_launcher
+mipmap ic_launcher_background
+mipmap ic_launcher_foreground
+mipmap ic_launcher_monochrome
+string splash_text
+style AppTheme
+style HomeTheme
+style SplashTheme
