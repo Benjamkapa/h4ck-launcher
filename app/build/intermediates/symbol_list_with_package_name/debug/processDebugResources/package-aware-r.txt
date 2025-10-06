@@ -2905,6 +2905,11 @@ drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable avd_hide_password
 drawable avd_show_password
+drawable battery_fill_10
+drawable battery_fill_100
+drawable battery_fill_25
+drawable battery_fill_50
+drawable battery_fill_75
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
@@ -2919,6 +2924,7 @@ drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
 drawable ic_arrow_back_black_24
+drawable ic_battery_outline
 drawable ic_call_answer
 drawable ic_call_answer_low
 drawable ic_call_answer_video
@@ -2936,6 +2942,11 @@ drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_search_black_24
+drawable ic_signal_0
+drawable ic_signal_1
+drawable ic_signal_2
+drawable ic_signal_3
+drawable ic_signal_4
 drawable m3_appbar_background
 drawable m3_avd_hide_password
 drawable m3_avd_show_password
@@ -2995,6 +3006,7 @@ drawable mtrl_switch_track
 drawable mtrl_switch_track_decoration
 drawable mtrl_tabs_default_indicator
 drawable navigation_empty_icon
+drawable network_bar_background
 drawable notification_action_background
 drawable notification_bg
 drawable notification_bg_low
@@ -3102,6 +3114,7 @@ id autoCompleteToEnd
 id autoCompleteToStart
 id barrier
 id baseline
+id battery_icon
 id beginOnFirstDraw
 id beginning
 id bestChoice
@@ -3322,6 +3335,8 @@ id navigation_bar_item_labels_group
 id navigation_bar_item_large_label_view
 id navigation_bar_item_small_label_view
 id navigation_header_container
+id network_container
+id network_status_bar
 id never
 id neverCompleteToEnd
 id neverCompleteToStart
@@ -3704,6 +3719,7 @@ layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
+layout view_network_status_bar
 mipmap ic_launcher
 mipmap ic_launcher_background
 mipmap ic_launcher_foreground

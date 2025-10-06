@@ -14,128 +14,136 @@
 12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 12-->C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:6:5-79
 12-->C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:6:22-76
-13
-14    <permission
-14-->[androidx.core:core:1.10.1] C:\Users\icore\.gradle\caches\8.12\transforms\82c2ec3920d31b743bab84b710de0fbd\transformed\core-1.10.1\AndroidManifest.xml:22:5-24:47
-15        android:name="com.example.launcher.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-15-->[androidx.core:core:1.10.1] C:\Users\icore\.gradle\caches\8.12\transforms\82c2ec3920d31b743bab84b710de0fbd\transformed\core-1.10.1\AndroidManifest.xml:23:9-81
-16        android:protectionLevel="signature" />
-16-->[androidx.core:core:1.10.1] C:\Users\icore\.gradle\caches\8.12\transforms\82c2ec3920d31b743bab84b710de0fbd\transformed\core-1.10.1\AndroidManifest.xml:24:9-44
-17
-18    <uses-permission android:name="com.example.launcher.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" /> <!-- <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> -->
-18-->[androidx.core:core:1.10.1] C:\Users\icore\.gradle\caches\8.12\transforms\82c2ec3920d31b743bab84b710de0fbd\transformed\core-1.10.1\AndroidManifest.xml:26:5-97
-18-->[androidx.core:core:1.10.1] C:\Users\icore\.gradle\caches\8.12\transforms\82c2ec3920d31b743bab84b710de0fbd\transformed\core-1.10.1\AndroidManifest.xml:26:22-94
-19    <!-- <uses-permission android:name="android.permission.READ_CALL_LOG" /> -->
-20    <!-- <uses-permission android:name="android.permission.READ_CONTACTS" /> -->
-21    <!-- <uses-permission android:name="android.permission.READ_SMS" /> -->
-22    <!-- <uses-permission android:name="android.permission.RECEIVE_SMS" /> -->
-23    <!-- <uses-permission android:name="android.permission.RECEIVE_MMS" /> -->
-24    <!-- <uses-permission android:name="android.permission.RECEIVE_WAP_PUSH" /> -->
-25    <!-- <uses-permission android:name="android.permission.READ_CALENDAR" /> -->
-26    <!-- <uses-permission android:name="android.permission.WRITE_CALENDAR" /> -->
-27    <!-- <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> -->
-28    <!-- <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> -->
-29    <!-- <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> -->
-30    <!-- <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> -->
-31    <!-- <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" /> -->
-32    <!-- <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" /> -->
-33    <!-- <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" /> -->
-34    <!-- <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" /> -->
-35    <!-- <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" /> -->
-36    <!-- <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" /> -->
-37    <!-- <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" /> -->
-38    <!-- <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" /> -->
-39    <!-- <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" /> -->
-40    <!-- <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" /> -->
-41    <application
-41-->C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:32:5-67:19
-42        android:allowBackup="true"
-42-->C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:33:9-35
-43        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-43-->[androidx.core:core:1.10.1] C:\Users\icore\.gradle\caches\8.12\transforms\82c2ec3920d31b743bab84b710de0fbd\transformed\core-1.10.1\AndroidManifest.xml:28:18-86
-44        android:debuggable="true"
-45        android:extractNativeLibs="true"
-46        android:icon="@mipmap/ic_launcher"
-46-->C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:35:9-43
-47        android:label="iMKAPA"
-47-->C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:34:9-31
-48        android:testOnly="true"
-49        android:theme="@style/AppTheme" >
-49-->C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:36:9-40
-50        <activity
-50-->C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:38:9-49:20
-51            android:name="com.example.launcher.presentation.splash.SplashActivity"
-51-->C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:39:13-63
-52            android:exported="true"
-52-->C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:41:13-36
-53            android:theme="@style/SplashTheme" >
-53-->C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:40:13-47
-54            <intent-filter>
-54-->C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:43:13-48:29
-55                <action android:name="android.intent.action.MAIN" />
-55-->C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:44:17-69
-55-->C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:44:25-66
-56
-57                <category android:name="android.intent.category.LAUNCHER" />
-57-->C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:45:17-77
-57-->C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:45:27-74
-58                <category android:name="android.intent.category.DEFAULT" />
-58-->C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:46:17-76
-58-->C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:46:27-73
-59                <category android:name="android.intent.category.HOME" />
-59-->C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:47:17-73
-59-->C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:47:27-70
-60            </intent-filter>
-61        </activity>
-62        <activity
-62-->C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:51:9-54:39
-63            android:name="com.example.launcher.presentation.home.HomeActivity"
-63-->C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:52:13-59
-64            android:exported="true"
-64-->C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:54:13-36
-65            android:theme="@style/HomeTheme" />
-65-->C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:53:13-45
+13    <!-- <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> -->
+14    <!-- <uses-permission android:name="android.permission.READ_CALL_LOG" /> -->
+15    <!-- <uses-permission android:name="android.permission.READ_CONTACTS" /> -->
+16    <!-- <uses-permission android:name="android.permission.READ_SMS" /> -->
+17    <!-- <uses-permission android:name="android.permission.RECEIVE_SMS" /> -->
+18    <!-- <uses-permission android:name="android.permission.RECEIVE_MMS" /> -->
+19    <!-- <uses-permission android:name="android.permission.RECEIVE_WAP_PUSH" /> -->
+20    <!-- <uses-permission android:name="android.permission.READ_CALENDAR" /> -->
+21    <!-- <uses-permission android:name="android.permission.WRITE_CALENDAR" /> -->
+22    <!-- <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> -->
+23    <!-- <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> -->
+24    <!-- <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> -->
+25    <!-- <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> -->
+26    <!-- <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" /> -->
+27    <!-- <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" /> -->
+28    <!-- <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" /> -->
+29    <!-- <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" /> -->
+30    <!-- <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" /> -->
+31    <!-- <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" /> -->
+32    <!-- <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" /> -->
+33    <!-- <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" /> -->
+34    <!-- <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" /> -->
+35    <!-- <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" /> -->
+36
+37    <queries>
+37-->C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:32:5-37:15
+38        <intent>
+38-->C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:33:9-36:18
+39            <action android:name="android.intent.action.MAIN" />
+39-->C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:34:13-65
+39-->C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:34:21-62
+40
+41            <category android:name="android.intent.category.LAUNCHER" />
+41-->C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:35:13-73
+41-->C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:35:23-70
+42        </intent>
+43    </queries>
+44
+45    <permission
+45-->[androidx.core:core:1.10.1] C:\Users\icore\.gradle\caches\8.12\transforms\82c2ec3920d31b743bab84b710de0fbd\transformed\core-1.10.1\AndroidManifest.xml:22:5-24:47
+46        android:name="com.example.launcher.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+46-->[androidx.core:core:1.10.1] C:\Users\icore\.gradle\caches\8.12\transforms\82c2ec3920d31b743bab84b710de0fbd\transformed\core-1.10.1\AndroidManifest.xml:23:9-81
+47        android:protectionLevel="signature" />
+47-->[androidx.core:core:1.10.1] C:\Users\icore\.gradle\caches\8.12\transforms\82c2ec3920d31b743bab84b710de0fbd\transformed\core-1.10.1\AndroidManifest.xml:24:9-44
+48
+49    <uses-permission android:name="com.example.launcher.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+49-->[androidx.core:core:1.10.1] C:\Users\icore\.gradle\caches\8.12\transforms\82c2ec3920d31b743bab84b710de0fbd\transformed\core-1.10.1\AndroidManifest.xml:26:5-97
+49-->[androidx.core:core:1.10.1] C:\Users\icore\.gradle\caches\8.12\transforms\82c2ec3920d31b743bab84b710de0fbd\transformed\core-1.10.1\AndroidManifest.xml:26:22-94
+50
+51    <application
+51-->C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:39:5-74:19
+52        android:allowBackup="true"
+52-->C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:40:9-35
+53        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+53-->[androidx.core:core:1.10.1] C:\Users\icore\.gradle\caches\8.12\transforms\82c2ec3920d31b743bab84b710de0fbd\transformed\core-1.10.1\AndroidManifest.xml:28:18-86
+54        android:debuggable="true"
+55        android:extractNativeLibs="true"
+56        android:icon="@mipmap/ic_launcher"
+56-->C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:42:9-43
+57        android:label="iMKAPA"
+57-->C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:41:9-31
+58        android:testOnly="true"
+59        android:theme="@style/AppTheme" >
+59-->C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:43:9-40
+60        <activity
+60-->C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:45:9-56:20
+61            android:name="com.example.launcher.presentation.splash.SplashActivity"
+61-->C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:46:13-63
+62            android:exported="true"
+62-->C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:48:13-36
+63            android:theme="@style/SplashTheme" >
+63-->C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:47:13-47
+64            <intent-filter>
+64-->C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:50:13-55:29
+65                <action android:name="android.intent.action.MAIN" />
+65-->C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:34:13-65
+65-->C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:34:21-62
 66
-67        <!-- Inside the <application> tag -->
-68        <service
-68-->C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:57:9-65:19
-69            android:name="com.example.launcher.services.ArcNotificationListener"
-69-->C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:58:13-61
-70            android:exported="true"
-70-->C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:61:13-36
-71            android:label="iMKAPA Notification Service"
-71-->C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:59:13-56
-72            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE" > <!-- Must be true from Android 12+ -->
-72-->C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:60:13-87
-73            <intent-filter>
-73-->C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:62:13-64:29
-74                <action android:name="android.service.notification.NotificationListenerService" />
-74-->C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:63:17-99
-74-->C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:63:25-96
-75            </intent-filter>
-76        </service>
-77
-78        <provider
-78-->[androidx.emoji2:emoji2:1.2.0] C:\Users\icore\.gradle\caches\8.12\transforms\5a3e187a3b955b34a5ea9a96336ab051\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
-79            android:name="androidx.startup.InitializationProvider"
-79-->[androidx.emoji2:emoji2:1.2.0] C:\Users\icore\.gradle\caches\8.12\transforms\5a3e187a3b955b34a5ea9a96336ab051\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
-80            android:authorities="com.example.launcher.androidx-startup"
-80-->[androidx.emoji2:emoji2:1.2.0] C:\Users\icore\.gradle\caches\8.12\transforms\5a3e187a3b955b34a5ea9a96336ab051\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
-81            android:exported="false" >
-81-->[androidx.emoji2:emoji2:1.2.0] C:\Users\icore\.gradle\caches\8.12\transforms\5a3e187a3b955b34a5ea9a96336ab051\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
-82            <meta-data
-82-->[androidx.emoji2:emoji2:1.2.0] C:\Users\icore\.gradle\caches\8.12\transforms\5a3e187a3b955b34a5ea9a96336ab051\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
-83                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-83-->[androidx.emoji2:emoji2:1.2.0] C:\Users\icore\.gradle\caches\8.12\transforms\5a3e187a3b955b34a5ea9a96336ab051\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
-84                android:value="androidx.startup" />
-84-->[androidx.emoji2:emoji2:1.2.0] C:\Users\icore\.gradle\caches\8.12\transforms\5a3e187a3b955b34a5ea9a96336ab051\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
-85            <meta-data
-85-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\icore\.gradle\caches\8.12\transforms\dd13aaff821ba1f1e7aeeb48103e5462\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
-86                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-86-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\icore\.gradle\caches\8.12\transforms\dd13aaff821ba1f1e7aeeb48103e5462\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
-87                android:value="androidx.startup" />
-87-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\icore\.gradle\caches\8.12\transforms\dd13aaff821ba1f1e7aeeb48103e5462\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
-88        </provider>
-89    </application>
-90
-91</manifest>
+67                <category android:name="android.intent.category.LAUNCHER" />
+67-->C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:35:13-73
+67-->C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:35:23-70
+68                <category android:name="android.intent.category.DEFAULT" />
+68-->C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:53:17-76
+68-->C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:53:27-73
+69                <category android:name="android.intent.category.HOME" />
+69-->C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:54:17-73
+69-->C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:54:27-70
+70            </intent-filter>
+71        </activity>
+72        <activity
+72-->C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:58:9-61:39
+73            android:name="com.example.launcher.presentation.home.HomeActivity"
+73-->C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:59:13-59
+74            android:exported="true"
+74-->C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:61:13-36
+75            android:theme="@style/HomeTheme" />
+75-->C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:60:13-45
+76
+77        <!-- Inside the <application> tag -->
+78        <!-- <service -->
+79        <!-- android:name=".services.ArcNotificationListener" -->
+80        <!-- android:label="iMKAPA Notification Service" -->
+81        <!-- android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE" -->
+82        <!-- android:exported="true">   &lt;!&ndash; Must be true from Android 12+ &ndash;&gt; -->
+83        <!-- <intent-filter> -->
+84        <!-- <action android:name="android.service.notification.NotificationListenerService" /> -->
+85        <!-- </intent-filter> -->
+86        <!-- </service> -->
+87
+88        <provider
+88-->[androidx.emoji2:emoji2:1.2.0] C:\Users\icore\.gradle\caches\8.12\transforms\5a3e187a3b955b34a5ea9a96336ab051\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+89            android:name="androidx.startup.InitializationProvider"
+89-->[androidx.emoji2:emoji2:1.2.0] C:\Users\icore\.gradle\caches\8.12\transforms\5a3e187a3b955b34a5ea9a96336ab051\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
+90            android:authorities="com.example.launcher.androidx-startup"
+90-->[androidx.emoji2:emoji2:1.2.0] C:\Users\icore\.gradle\caches\8.12\transforms\5a3e187a3b955b34a5ea9a96336ab051\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
+91            android:exported="false" >
+91-->[androidx.emoji2:emoji2:1.2.0] C:\Users\icore\.gradle\caches\8.12\transforms\5a3e187a3b955b34a5ea9a96336ab051\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
+92            <meta-data
+92-->[androidx.emoji2:emoji2:1.2.0] C:\Users\icore\.gradle\caches\8.12\transforms\5a3e187a3b955b34a5ea9a96336ab051\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+93                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+93-->[androidx.emoji2:emoji2:1.2.0] C:\Users\icore\.gradle\caches\8.12\transforms\5a3e187a3b955b34a5ea9a96336ab051\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
+94                android:value="androidx.startup" />
+94-->[androidx.emoji2:emoji2:1.2.0] C:\Users\icore\.gradle\caches\8.12\transforms\5a3e187a3b955b34a5ea9a96336ab051\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
+95            <meta-data
+95-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\icore\.gradle\caches\8.12\transforms\dd13aaff821ba1f1e7aeeb48103e5462\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+96                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+96-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\icore\.gradle\caches\8.12\transforms\dd13aaff821ba1f1e7aeeb48103e5462\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+97                android:value="androidx.startup" />
+97-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\icore\.gradle\caches\8.12\transforms\dd13aaff821ba1f1e7aeeb48103e5462\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+98        </provider>
+99    </application>
+100
+101</manifest>

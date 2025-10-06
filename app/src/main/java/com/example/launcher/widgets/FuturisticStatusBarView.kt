@@ -1,134 +1,102 @@
 package com.example.launcher.widgets
 
-import android.content.*
-import android.graphics.*
-import android.net.ConnectivityManager
-import android.net.NetworkCapabilities
-import android.os.*
-import android.telephony.SubscriptionInfo
+import android.content.Context
 import android.telephony.SubscriptionManager
 import android.telephony.TelephonyManager
-import android.text.format.DateFormat
 import android.util.AttributeSet
-import android.view.View
-import androidx.annotation.RequiresApi
+import android.view.Gravity
+import android.view.LayoutInflater
+import android.widget.ImageView
+import android.widget.LinearLayout
+import android.widget.TextView
 import com.example.launcher.R
-import java.util.*
 
-@RequiresApi(Build.VERSION_CODES.M)
+// --- FIX: RENAME THIS CLASS ---
 class FuturisticStatusBarView @JvmOverloads constructor(
     context: Context,
-    attrs: AttributeSet? = null,
-    defStyleAttr: Int = 0
-) : View(context, attrs, defStyleAttr) {
+    attrs: AttributeSet? = null
+) : LinearLayout(context, attrs) {
 
-    private var batteryLevel = 0
-    private var currentTime = ""
-    private var carriers: List<String> = listOf("No SIM")
+    private val container: LinearLayout
 
-    private val textPaint = Paint(Paint.ANTI_ALIAS_FLAG).apply {
-        color = Color.parseColor("#00FF00") // neon green
-        textSize = 28f
-        typeface = Typeface.MONOSPACE
+    init {
+        LayoutInflater.from(context).inflate(R.layout.view_network_status_bar, this, true)
+        container = findViewById(R.id.network_container)
+        setupNetworks()
+
+        val batteryIcon = findViewById<ImageView>(R.id.battery_icon)
+        val bm = context.getSystemService(Context.BATTERY_SERVICE) as android.os.BatteryManager
+        val batteryPercent = bm.getIntProperty(android.os.BatteryManager.BATTERY_PROPERTY_CAPACITY)
+
+        batteryIcon.setImageResource(getBatteryDrawable(batteryPercent))
     }
 
-    private val boxPaint = Paint(Paint.ANTI_ALIAS_FLAG).apply {
-        color = Color.TRANSPARENT
-        style = Paint.Style.STROKE
-        strokeWidth = 3f
-        this.color = Color.parseColor("#00FF00")
+    private fun getBatteryDrawable(percent: Int): Int {
+        // ... (rest of the function is correct)
+        return when {
+            percent >= 90 -> R.drawable.battery_fill_100
+            percent >= 70 -> R.drawable.battery_fill_75
+            percent >= 40 -> R.drawable.battery_fill_50
+            percent >= 20 -> R.drawable.battery_fill_25
+            else -> R.drawable.battery_fill_10
+        }
     }
 
-    private val handler = Handler(Looper.getMainLooper())
+    private fun setupNetworks() {
+        container.removeAllViews()
 
-    private val systemReceiver = object : BroadcastReceiver() {
-        override fun onReceive(context: Context?, intent: Intent?) {
-            when (intent?.action) {
-                Intent.ACTION_BATTERY_CHANGED -> updateBattery(intent)
+        val subMgr = context.getSystemService(Context.TELEPHONY_SUBSCRIPTION_SERVICE) as SubscriptionManager
+        val teleMgr = context.getSystemService(Context.TELEPHONY_SERVICE) as TelephonyManager
+
+        val subscriptions = subMgr.activeSubscriptionInfoList ?: emptyList()
+
+        if (subscriptions.isEmpty()) {
+            addNetworkItem("No SIM", 0)
+        } else {
+            subscriptions.forEach { subInfo ->
+                val signalStrength = if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.Q) {
+                    teleMgr.createForSubscriptionId(subInfo.subscriptionId).signalStrength?.level ?: 0
+                } else {
+                    @Suppress("DEPRECATION")
+                    teleMgr.signalStrength?.level ?: 0
+                }
+                addNetworkItem(subInfo.displayName.toString(), signalStrength)
             }
-            invalidate()
         }
     }
 
-    private fun updateBattery(intent: Intent) {
-        val level = intent.getIntExtra(BatteryManager.EXTRA_LEVEL, -1)
-        val scale = intent.getIntExtra(BatteryManager.EXTRA_SCALE, -1)
-        if (level != -1 && scale != -1) {
-            batteryLevel = (level * 100 / scale.toFloat()).toInt()
+    private fun addNetworkItem(carrier: String, level: Int) {
+        val item = LinearLayout(context).apply {
+            orientation = HORIZONTAL
+            gravity = Gravity.CENTER_VERTICAL
+            layoutParams = LayoutParams(0, LayoutParams.WRAP_CONTENT, 1f)
+            setPadding(8, 0, 8, 0)
         }
-    }
 
-    private fun updateCarriers() {
-        val subs = SubscriptionManager.from(context).activeSubscriptionInfoList
-        carriers = subs?.map { it.carrierName.toString() } ?: listOf("No SIM")
-    }
-
-    private val timeUpdater = object : Runnable {
-        override fun run() {
-            currentTime = DateFormat.format("HH:mm", Date()).toString()
-            updateCarriers()
-            invalidate()
-            handler.postDelayed(this, 1000)
+        val name = TextView(context).apply {
+            text = carrier
+            setTextColor(0xFFFFFFFF.toInt())
+            textSize = 12f
         }
+
+        val bars = ImageView(context).apply {
+            setImageResource(getSignalDrawable(level))
+            setPadding(6, 0, 0, 0)
+        }
+
+        item.addView(name)
+        item.addView(bars)
+        container.addView(item)
     }
 
-    override fun onAttachedToWindow() {
-        super.onAttachedToWindow()
-        val filter = IntentFilter(Intent.ACTION_BATTERY_CHANGED)
-        context.registerReceiver(systemReceiver, filter)
-        handler.post(timeUpdater)
-    }
-
-    override fun onDetachedFromWindow() {
-        super.onDetachedFromWindow()
-        context.unregisterReceiver(systemReceiver)
-        handler.removeCallbacks(timeUpdater)
-    }
-
-    override fun onDraw(canvas: Canvas) {
-        super.onDraw(canvas)
-
-        val padding = 20f
-        val textY = (height / 2f) - ((textPaint.descent() + textPaint.ascent()) / 2f)
-
-        // 1. Time (LEFT)
-        textPaint.textAlign = Paint.Align.LEFT
-        canvas.drawText(currentTime, padding, textY, textPaint)
-
-        // 2. Carrier + Battery (RIGHT)
-        textPaint.textAlign = Paint.Align.RIGHT
-        var rightX = width - padding
-
-        carriers.forEachIndexed { index, carrier ->
-            val boxWidth = 200f
-            val boxHeight = 70f
-            val left = rightX - boxWidth
-            val top = (height / 2f) - (boxHeight / 2f)
-            val rect = RectF(left, top, rightX, top + boxHeight)
-
-            // Draw rounded box
-            canvas.drawRoundRect(rect, 15f, 15f, boxPaint)
-
-            // Carrier name
-            textPaint.textAlign = Paint.Align.CENTER
-            canvas.drawText(
-                carrier,
-                rect.centerX(),
-                rect.centerY() - 10,
-                textPaint
-            )
-
-            // Battery simple bar under name
-            val batteryText = "$batteryLevel%"
-            canvas.drawText(
-                batteryText,
-                rect.centerX(),
-                rect.centerY() + 20,
-                textPaint
-            )
-
-            // Shift left if multiple SIMs
-            rightX -= (boxWidth + 20f)
+    private fun getSignalDrawable(level: Int): Int {
+        // ... (rest of the function is correct)
+        return when (level) {
+            4 -> R.drawable.ic_signal_4
+            3 -> R.drawable.ic_signal_3
+            2 -> R.drawable.ic_signal_2
+            1 -> R.drawable.ic_signal_1
+            else -> R.drawable.ic_signal_0
         }
     }
 }
@@ -148,148 +116,100 @@ class FuturisticStatusBarView @JvmOverloads constructor(
 
 
 
+
 //package com.example.launcher.widgets
 //
-//import android.content.BroadcastReceiver
+//import android.view.Gravity
 //import android.content.Context
-//import android.content.Intent
-//import android.content.IntentFilter
-//import android.graphics.Canvas
-//import android.graphics.Color
-//import android.graphics.Paint
-//import android.graphics.drawable.Icon
-//import android.net.ConnectivityManager
-//import android.net.NetworkCapabilities
-//import android.os.BatteryManager
-//import android.os.Build
-//import android.os.Handler
-//import android.os.Looper
+//import android.telephony.SubscriptionInfo
+//import android.telephony.SubscriptionManager
 //import android.telephony.TelephonyManager
-//import android.text.format.DateFormat
 //import android.util.AttributeSet
-//import android.view.View
-//import androidx.annotation.RequiresApi
-//import androidx.localbroadcastmanager.content.LocalBroadcastManager
-//import com.example.launcher.services.ArcNotificationListener
-//import java.util.*
+//import android.view.LayoutInflater
+//import android.widget.ImageView
+//import android.widget.LinearLayout
+//import android.widget.TextView
+//import com.example.launcher.R
 //
-//@RequiresApi(Build.VERSION_CODES.M)
-//class FuturisticStatusBarView @JvmOverloads constructor(
+//class FuturisticNetworkBarView @JvmOverloads constructor(
 //    context: Context,
-//    attrs: AttributeSet? = null,
-//    defStyleAttr: Int = 0
-//) : View(context, attrs, defStyleAttr) {
+//    attrs: AttributeSet? = null
+//) : LinearLayout(context, attrs) {
 //
-//    private var batteryLevel = 0
-//    private var currentTime = ""
-//    private var networkType = "---"
-//    private var carrierName = "No Service"
-//    private var notificationIcons = listOf<Icon>()
+//    private val container: LinearLayout
 //
-//    private val textPaint = Paint(Paint.ANTI_ALIAS_FLAG).apply {
-//        color = Color.parseColor("#00FF00") // Matrix Green
-//        textSize = 45f
-//        typeface = android.graphics.Typeface.MONOSPACE
+//    init {
+//        LayoutInflater.from(context).inflate(R.layout.view_network_status_bar, this, true)
+//        container = findViewById(R.id.network_container)
+//        setupNetworks()
+//
+//        val batteryIcon = findViewById<ImageView>(R.id.battery_icon)
+//        val bm = context.getSystemService(Context.BATTERY_SERVICE) as android.os.BatteryManager
+//        val batteryPercent = bm.getIntProperty(android.os.BatteryManager.BATTERY_PROPERTY_CAPACITY)
+//
+//        batteryIcon.setImageResource(getBatteryDrawable(batteryPercent))
+//
 //    }
 //
-//    private val handler = Handler(Looper.getMainLooper())
-//
-//    // --- RECEIVER FOR NOTIFICATIONS, BATTERY, AND NETWORK ---
-//    private val systemInfoReceiver = object : BroadcastReceiver() {
-//        override fun onReceive(context: Context?, intent: Intent?) {
-//            when (intent?.action) {
-//                Intent.ACTION_BATTERY_CHANGED -> updateBattery(intent)
-//                ArcNotificationListener.ACTION_SEND_NOTIFICATIONS -> updateNotifications(intent)
-//                ConnectivityManager.CONNECTIVITY_ACTION -> updateNetworkInfo()
-//            }
-//            invalidate() // Redraw the view on any update
+//    private fun getBatteryDrawable(percent: Int): Int {
+//        return when {
+//            percent >= 90 -> R.drawable.battery_fill_100
+//            percent >= 70 -> R.drawable.battery_fill_75
+//            percent >= 40 -> R.drawable.battery_fill_50
+//            percent >= 20 -> R.drawable.battery_fill_25
+//            else -> R.drawable.battery_fill_10
 //        }
 //    }
 //
-//    private fun updateBattery(intent: Intent) {
-//        val level = intent.getIntExtra(BatteryManager.EXTRA_LEVEL, -1)
-//        val scale = intent.getIntExtra(BatteryManager.EXTRA_SCALE, -1)
-//        if (level != -1 && scale != -1) {
-//            batteryLevel = (level * 100 / scale.toFloat()).toInt()
+//
+//    private fun setupNetworks() {
+//        container.removeAllViews()
+//
+//        val subMgr = context.getSystemService(Context.TELEPHONY_SUBSCRIPTION_SERVICE) as SubscriptionManager
+//        val teleMgr = context.getSystemService(Context.TELEPHONY_SERVICE) as TelephonyManager
+//
+//        val subscriptions = subMgr.activeSubscriptionInfoList ?: emptyList()
+//
+//        subscriptions.forEach { subInfo ->
+//            addNetworkItem(subInfo.displayName.toString(), teleMgr.signalStrength?.level ?: 4)
 //        }
 //    }
 //
-//    private fun updateNotifications(intent: Intent) {
-//        val icons = intent.getParcelableArrayListExtra<Icon>(ArcNotificationListener.EXTRA_NOTIFICATIONS)
-//        notificationIcons = icons ?: emptyList()
-//    }
-//
-//    private fun updateNetworkInfo() {
-//        val cm = context.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
-//        val capabilities = cm.getNetworkCapabilities(cm.activeNetwork)
-//        networkType = when {
-//            capabilities == null -> "---"
-//            capabilities.hasTransport(NetworkCapabilities.TRANSPORT_WIFI) -> "WIFI"
-//            capabilities.hasTransport(NetworkCapabilities.TRANSPORT_CELLULAR) -> "LTE"
-//            else -> "NET"
+//    private fun addNetworkItem(carrier: String, level: Int) {
+//        val item = LinearLayout(context).apply {
+//            orientation = HORIZONTAL
+//            gravity = Gravity.CENTER_VERTICAL
+//            layoutParams = LayoutParams(0, LayoutParams.WRAP_CONTENT, 1f)
+//            setPadding(8, 0, 8, 0)
 //        }
 //
-//        val tm = context.getSystemService(Context.TELEPHONY_SERVICE) as TelephonyManager
-//        carrierName = tm.networkOperatorName.take(8) // Limit carrier name length
-//    }
-//
-//    private val timeUpdater = object : Runnable {
-//        override fun run() {
-//            currentTime = DateFormat.format("HH:mm", Date()).toString() // Changed to HH:mm
-//            updateNetworkInfo() // Periodically check network status
-//            invalidate()
-//            handler.postDelayed(this, 1000)
-//        }
-//    }
-//
-//    override fun onAttachedToWindow() {
-//        super.onAttachedToWindow()
-//        val filter = IntentFilter().apply {
-//            addAction(Intent.ACTION_BATTERY_CHANGED)
-//            addAction(ConnectivityManager.CONNECTIVITY_ACTION)
-//        }
-//        context.registerReceiver(systemInfoReceiver, filter)
-//        // Register for local broadcasts from our notification service
-//        LocalBroadcastManager.getInstance(context).registerReceiver(systemInfoReceiver, IntentFilter(
-//            ArcNotificationListener.ACTION_SEND_NOTIFICATIONS))
-//
-//        handler.post(timeUpdater)
-//    }
-//
-//    override fun onDetachedFromWindow() {
-//        super.onDetachedFromWindow()
-//        context.unregisterReceiver(systemInfoReceiver)
-//        LocalBroadcastManager.getInstance(context).unregisterReceiver(systemInfoReceiver)
-//        handler.removeCallbacks(timeUpdater)
-//    }
-//
-//    override fun onDraw(canvas: Canvas) {
-//        super.onDraw(canvas)
-//        canvas.drawColor(Color.argb(100, 0, 15, 0)) // Semi-transparent green background
-//
-//        val padding = 20f
-//        val iconSize = (height * 0.6f).toInt()
-//        val textY = (height / 2f) - ((textPaint.descent() + textPaint.ascent()) / 2f)
-//
-//        // 1. Draw Notification Icons on the left
-//        var currentX = padding
-//        notificationIcons.take(5).forEach { icon -> // Show a max of 5 icons
-//            val drawable = icon.loadDrawable(context)
-//            drawable?.let {
-//                it.setBounds(currentX.toInt(), (height - iconSize) / 2, currentX.toInt() + iconSize, (height + iconSize) / 2)
-//                it.setTint(textPaint.color) // Tint the notification icon green
-//                it.draw(canvas)
-//                currentX += iconSize + 10 // Add padding between icons
-//            }
+//        val name = TextView(context).apply {
+//            text = carrier
+//            setTextColor(0xFFFFFFFF.toInt())
+//            textSize = 12f
 //        }
 //
-//        // 2. Draw Time in the center
-//        textPaint.textAlign = Paint.Align.CENTER
-//        canvas.drawText(currentTime, width / 2f, textY, textPaint)
+//        val bars = ImageView(context).apply {
+//            setImageResource(getSignalDrawable(level))
+//            setPadding(6, 0, 0, 0)
+//        }
 //
-//        // 3. Draw Network, Carrier, and Battery on the right
-//        textPaint.textAlign = Paint.Align.RIGHT
-//        val rightText = "$carrierName | $networkType | BAT: $batteryLevel%"
-//        canvas.drawText(rightText, width - padding, textY, textPaint)
+//        item.addView(name)
+//        item.addView(bars)
+//        container.addView(item)
+//    }
+//
+//    private fun getSignalDrawable(level: Int): Int {
+//        return when (level) {
+//            4 -> R.drawable.ic_signal_4
+//            3 -> R.drawable.ic_signal_3
+//            2 -> R.drawable.ic_signal_2
+//            1 -> R.drawable.ic_signal_1
+//            else -> R.drawable.ic_signal_0
+//        }
 //    }
 //}
+//
+//
+//
+//

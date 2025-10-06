@@ -1,0 +1,16 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="30dp"
+    android:height="10dp"
+    android:viewportWidth="25"
+    android:viewportHeight="10">
+
+    <!-- Battery body -->
+    <path
+        android:fillColor="@android:color/transparent"
+        android:strokeColor="@color/matrix_green"
+        android:strokeWidth=".2"
+        android:pathData="M1,1 h20 a2,2 0 0 1 2,2 v6 a2,2 0 0 1 -2,2 h-20 a2,2 0 0 1 -2,-2 v-6 a2,2 0 0 1 2,-2z" />
+
+    <path
+        android:fillColor="@color/matrix_green" />
+</vector>

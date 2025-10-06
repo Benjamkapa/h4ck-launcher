@@ -1,3 +1,288 @@
+//package com.example.launcher.widgets
+//
+//import android.content.Context
+//import android.graphics.Canvas
+//import android.graphics.Color
+//import android.graphics.Paint
+//import android.util.AttributeSet
+//import android.view.View
+//import kotlin.random.Random
+//
+///**
+// * Full-screen CMatrix-style "digital rain" background.
+// * Fills the entire screen — not just the top.
+// */
+//class MatrixBackgroundView @JvmOverloads constructor(
+//    context: Context,
+//    attrs: AttributeSet? = null,
+//    defStyleAttr: Int = 0
+//) : View(context, attrs, defStyleAttr) {
+//
+//    // Character set (binary + ASCII + Katakana)
+//    private val charset = ("01abcdefghijklmnopqrstuvwxyz" +
+//            "ABCDEFGHIJKLMNOPQRSTUVWXYZ" +
+//            "あいうえおカキクケコサシスセソ").toCharArray()
+//
+//    private val headPaint = Paint(Paint.ANTI_ALIAS_FLAG).apply {
+//        color = Color.argb(255, 180, 255, 160)
+//        style = Paint.Style.FILL
+//        isFakeBoldText = true
+//    }
+//    private val trailPaint = Paint(Paint.ANTI_ALIAS_FLAG).apply {
+//        color = Color.argb(200, 0, 220, 120)
+//        style = Paint.Style.FILL
+//    }
+//    private val fadePaint = Paint().apply {
+//        color = Color.argb(80, 0, 0, 0) // darker background overlay for fading trails
+//    }
+//
+//    // Grid properties
+//    private var charSize = 28f
+//    private var charWidth = 0f
+//    private var charHeight = 0f
+//    private var cols = 0
+//    private var rows = 0
+//
+//    // Per-column state
+//    private lateinit var yPositions: FloatArray
+//    private lateinit var speeds: FloatArray
+//    private lateinit var buffers: Array<CharArray>
+//
+//    private val trailLength = 14
+//    private val minSpeed = 4f
+//    private val maxSpeed = 10f
+//
+//    private var running = false
+//
+//    init {
+//        val density = context.resources.displayMetrics.density
+//        charSize = 20f * density
+//        headPaint.textSize = charSize
+//        trailPaint.textSize = charSize
+//    }
+//
+//    override fun onSizeChanged(w: Int, h: Int, oldw: Int, oldh: Int) {
+//        super.onSizeChanged(w, h, oldw, oldh)
+//
+//        charWidth = trailPaint.measureText("あ")
+//        charHeight = charSize * 1.05f
+//        cols = (w / charWidth).toInt().coerceAtLeast(2)
+//        rows = (h / charHeight).toInt().coerceAtLeast(6)
+//
+//        // Initialize column data
+//        yPositions = FloatArray(cols)
+//        speeds = FloatArray(cols)
+//        buffers = Array(cols) { CharArray(rows) }
+//
+//        for (c in 0 until cols) {
+//            yPositions[c] = Random.nextFloat() * height
+//            speeds[c] = minSpeed + Random.nextFloat() * (maxSpeed - minSpeed)
+//            for (r in 0 until rows) {
+//                buffers[c][r] = randomChar()
+//            }
+//        }
+//    }
+//
+//    override fun onDraw(canvas: Canvas) {
+//        super.onDraw(canvas)
+//
+//        // Fade old trails
+//        canvas.drawRect(0f, 0f, width.toFloat(), height.toFloat(), fadePaint)
+//
+//        for (c in 0 until cols) {
+//            val x = c * charWidth
+//            var y = yPositions[c]
+//
+//            // Draw trail from head upward (so full screen is covered)
+//            for (t in 0 until trailLength) {
+//                val index = (y / charHeight - t).toInt().mod(rows)
+//                if (index < 0 || index >= rows) continue
+//
+//                val paint = if (t == 0) headPaint else trailPaint
+//                val alpha = (255 * (1f - t.toFloat() / trailLength)).toInt().coerceIn(30, 255)
+//                paint.alpha = alpha
+//
+//                val char = buffers[c][index]
+//                canvas.drawText(char.toString(), x, y - t * charHeight, paint)
+//            }
+//
+//            // Move downward
+//            yPositions[c] += speeds[c]
+//            if (yPositions[c] > height + charHeight * trailLength) {
+//                yPositions[c] = -Random.nextFloat() * height / 2 // restart above screen
+//                // randomize speed and refresh column
+//                speeds[c] = minSpeed + Random.nextFloat() * (maxSpeed - minSpeed)
+//                for (r in 0 until rows) buffers[c][r] = randomChar()
+//            }
+//
+//            // Occasionally shuffle chars while falling
+//            if (Random.nextFloat() < 0.05f) {
+//                val index = Random.nextInt(rows)
+//                buffers[c][index] = randomChar()
+//            }
+//        }
+//
+//        if (running) postInvalidateOnAnimation()
+//    }
+//
+//    fun startAnimation() {
+//        if (!running) {
+//            running = true
+//            invalidate()
+//        }
+//    }
+//
+//    fun stopAnimation() {
+//        running = false
+//    }
+//
+//    private fun randomChar(): Char = charset[Random.nextInt(charset.size)]
+//}
+//
+
+//
+//
+
+
+
+
+
+
+
+
+
+
+//
+//
+////*********
+//package com.example.launcher.widgets
+//
+//import android.content.Context
+//import android.graphics.*
+//import android.util.AttributeSet
+//import android.view.View
+//import kotlin.math.cos
+//import kotlin.math.sin
+//import kotlin.random.Random
+//
+//class MatrixBackgroundView @JvmOverloads constructor(
+//    context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0
+//) : View(context, attrs, defStyleAttr) {
+//
+//    private val bgPaint = Paint().apply {
+//        color = Color.BLACK
+//    }
+//
+//    private val glowPaint = Paint().apply {
+//        color = Color.parseColor("#00FF00")
+//        style = Paint.Style.FILL
+//        isAntiAlias = true
+//        maskFilter = BlurMaskFilter(10f, BlurMaskFilter.Blur.NORMAL)
+//    }
+//
+//    private val linePaint = Paint().apply {
+//        color = Color.parseColor("#004400")
+//        strokeWidth = 1.2f
+//        isAntiAlias = true
+//    }
+//
+//    private val particleCount = 70
+//    private val particles = mutableListOf<Particle>()
+//    private var animating = false
+//
+//    private data class Particle(
+//        var x: Float,
+//        var y: Float,
+//        var r: Float,
+//        var vx: Float,
+//        var vy: Float,
+//        var alpha: Int
+//    )
+//
+//    init {
+//        for (i in 0 until particleCount) {
+//            particles.add(
+//                Particle(
+//                    x = Random.nextFloat() * 1080,
+//                    y = Random.nextFloat() * 1920,
+//                    r = Random.nextFloat() * 4f + 2f,
+//                    vx = Random.nextFloat() * 2f - 1f,
+//                    vy = Random.nextFloat() * 2f - 1f,
+//                    alpha = Random.nextInt(100, 255)
+//                )
+//            )
+//        }
+//    }
+//
+//    override fun onDraw(canvas: Canvas) {
+//        super.onDraw(canvas)
+//
+//        // Draw dark fading background to create trail effect
+//        canvas.drawRect(0f, 0f, width.toFloat(), height.toFloat(), bgPaint)
+//
+//        // Subtle digital grid
+//        val gridSpacing = 60
+//        for (x in 0 until width step gridSpacing) {
+//            canvas.drawLine(x.toFloat(), 0f, x.toFloat(), height.toFloat(), linePaint)
+//        }
+//        for (y in 0 until height step gridSpacing) {
+//            canvas.drawLine(0f, y.toFloat(), width.toFloat(), y.toFloat(), linePaint)
+//        }
+//
+//        // Animate glowing particles
+//        for (p in particles) {
+//            glowPaint.alpha = p.alpha
+//            canvas.drawCircle(p.x, p.y, p.r, glowPaint)
+//
+//            // slight drift in movement
+//            p.x += p.vx
+//            p.y += p.vy + sin(p.x / 80f) * 0.4f
+//
+//            // wrap around screen edges
+//            if (p.x < 0) p.x = width.toFloat()
+//            if (p.x > width) p.x = 0f
+//            if (p.y < 0) p.y = height.toFloat()
+//            if (p.y > height) p.y = 0f
+//        }
+//
+//        if (animating) postInvalidateOnAnimation()
+//    }
+//
+//    fun startAnimation() {
+//        animating = true
+//        invalidate()
+//    }
+//
+//    fun stopAnimation() {
+//        animating = false
+//    }
+//}
+//
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 package com.example.launcher.widgets
 
 import android.content.Context
@@ -15,7 +300,7 @@ class MatrixBackgroundView @JvmOverloads constructor(
     private val textSize = 20f
 
     private val paint = Paint().apply {
-        color = Color.parseColor("#00FF00")
+        color = Color.parseColor("#066011")
         textSize = this@MatrixBackgroundView.textSize
         typeface = android.graphics.Typeface.MONOSPACE
         isAntiAlias = true

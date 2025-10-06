@@ -34,7 +34,7 @@ class HomeActivity : AppCompatActivity() {
         window.navigationBarColor = Color.TRANSPARENT
 
         setContentView(R.layout.activity_home)
-//        hideSystemBars()
+        hideSystemBars()
 
         checkAndRequestNotificationPermission()
 
@@ -44,7 +44,7 @@ class HomeActivity : AppCompatActivity() {
 
         // --- NEW CODE to set up app list ---
         appListRecyclerView = findViewById(R.id.app_list_rv)
-        appListRecyclerView.layoutManager = GridLayoutManager(this, 4) // 4 columns
+        appListRecyclerView.layoutManager = GridLayoutManager(this, 5) // 4 columns
 
         val apps = loadApps()
         appListRecyclerView.adapter = AppDrawerAdapter(apps)
