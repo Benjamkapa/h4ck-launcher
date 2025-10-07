@@ -10,6 +10,7 @@ drawable battery_fill_25
 drawable battery_fill_50
 drawable battery_fill_75
 drawable ic_battery_outline
+drawable ic_charging
 drawable ic_signal_0
 drawable ic_signal_1
 drawable ic_signal_2

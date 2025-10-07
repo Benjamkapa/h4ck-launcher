@@ -62,31 +62,6 @@ class HomeActivity : AppCompatActivity() {
         }
     }
 
-//    // --- NEW FUNCTION to load apps ---
-//    private fun loadApps(): List<AppInfo> {
-//        val pm = packageManager
-//        val mainIntent = Intent(Intent.ACTION_MAIN, null).apply {
-//            addCategory(Intent.CATEGORY_LAUNCHER)
-//        }
-//        val resolveInfos: List<ResolveInfo> = pm.queryIntentActivities(mainIntent, 0)
-//
-//        val appsList = ArrayList<AppInfo>()
-//        for (info in resolveInfos) {
-//            appsList.add(
-//                AppInfo(
-//                    label = info.loadLabel(pm),
-//                    packageName = info.activityInfo.packageName,
-//                    icon = info.loadIcon(pm)
-//                )
-//            )
-//        }
-//        // Sort the list alphabetically
-//        appsList.sortBy { it.label.toString().lowercase() }
-//        return appsList
-//    }
-
-
-
     private fun loadApps(): List<AppInfo> {
         val pm = packageManager
         val mainIntent = Intent(Intent.ACTION_MAIN).apply {

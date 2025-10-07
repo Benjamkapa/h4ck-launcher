@@ -4,48 +4,48 @@
     android:viewportWidth="50"
     android:viewportHeight="20">
 
-    <!-- Battery outline with circular corners -->
+    <!-- Battery outline with smoother corners and tighter fit -->
     <path
         android:pathData="
-            M2,2
-            h46
-            a8,8 0 0 1 8,8
+            M7,5
+            h34
+            a5,5 0 0 1 5,5
             v0
-            a8,8 0 0 1 -8,8
-            h-46
-            a8,8 0 0 1 -8,-8
+            a5,5 0 0 1 -5,5
+            h-34
+            a5,5 0 0 1 -5,-5
             v0
-            a8,8 0 0 1 8,-8
+            a5,5 0 0 1 5,-5
             z" />
 
-    <!-- Battery positive terminal -->
+    <!-- Battery positive terminal (smaller, centered) -->
     <path
         android:fillColor="#00FF00"
-        android:pathData="M50,7 h2 v6 h-2 z" />
+        android:pathData="M38,8.5 h2 v3 h-2 z" />
 
     <!-- Fill segment 1 (10%) -->
     <path
         android:fillColor="#FF0000"
-        android:pathData="M4,4 h8 v12 h-8 z" />
+        android:pathData="M9,6.5 h5 v7 h-5 z" />
 
     <!-- Fill segment 2 (25%) -->
     <path
         android:fillColor="#FF6600"
-        android:pathData="M13,4 h8 v12 h-8 z" />
+        android:pathData="M15,6.5 h5 v7 h-5 z" />
 
     <!-- Fill segment 3 (50%) -->
     <path
         android:fillColor="#FFFF00"
-        android:pathData="M22,4 h8 v12 h-8 z" />
+        android:pathData="M21,6.5 h5 v7 h-5 z" />
 
     <!-- Fill segment 4 (75%) -->
     <path
         android:fillColor="#99FF00"
-        android:pathData="M31,4 h8 v12 h-8 z" />
+        android:pathData="M27,6.5 h5 v7 h-5 z" />
 
     <!-- Outline for segment 5 (100%) -->
     <path
         android:strokeColor="#00FF00"
         android:strokeWidth=".5"
-        android:pathData="M40,4 h8 v12 h-8 z" />
+        android:pathData="M33,6.5 h5 v7 h-5 z" />
 </vector>

@@ -1,0 +1,59 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="25dp"
+    android:height="10dp"
+    android:viewportWidth="50"
+    android:viewportHeight="20">
+
+    <!-- Glow Aura -->
+    <path
+        android:name="aura"
+        android:fillColor="#00FF00"
+        android:fillAlpha="0.25"
+        android:pathData="M12,2 L6,11 L10,11 L8.5,22 L18,9 L13,9 L14.5,2 Z" />
+
+    <!-- Lightning Core -->
+    <path
+        android:name="core"
+        android:fillColor="#00FF88"
+        android:strokeWidth="0.5"
+        android:pathData="M12,2 L6,11 L10,11 L8.5,22 L18,9 L13,9 L14.5,2 Z" />
+</vector>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--<vector xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:width="25dp"-->
+<!--    android:height="10dp"-->
+<!--    android:viewportWidth="50"-->
+<!--    android:viewportHeight="20">-->
+
+<!--    &lt;!&ndash; Glow Aura &ndash;&gt;-->
+<!--    <path-->
+<!--        android:name="aura"-->
+<!--        android:fillColor="#00FF00"-->
+<!--        android:fillAlpha="0.25"-->
+<!--        android:pathData="M12,2 L6,11 L10,11 L8.5,22 L18,9 L13,9 L14.5,2 Z" />-->
+
+<!--    &lt;!&ndash; Lightning Core &ndash;&gt;-->
+<!--    <path-->
+<!--        android:name="core"-->
+<!--        android:fillColor="#00FF88"-->
+<!--        android:strokeColor="@color/material_dynamic_primary30"-->
+<!--        android:strokeWidth="0.5"-->
+<!--        android:pathData="M12,2 L6,11 L10,11 L8.5,22 L18,9 L13,9 L14.5,2 Z" />-->
+<!--</vector>-->
