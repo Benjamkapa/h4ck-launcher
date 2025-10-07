@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:color="@color/matrix_green"
     android:gravity="center_vertical"
     android:orientation="horizontal"
     android:paddingStart="16dp"
@@ -30,10 +31,10 @@
             android:id="@+id/text_clock"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="25dp"
+            android:layout_marginEnd="0dp"
             android:format12Hour="h:mm a"
             android:format24Hour="HH:mm:ss"
-            android:textColor="#FFFFFF"
+            android:textColor="@color/matrix_green"
             android:textSize="14sp"
             tools:text="10:30:00" />
 
@@ -42,8 +43,7 @@
             android:id="@+id/battery_icon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="40dp"
-            tools:src="@drawable/battery_fill_100" />
+            android:layout_marginEnd="40dp" />
 
     </LinearLayout>
 

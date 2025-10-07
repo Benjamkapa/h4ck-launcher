@@ -9,6 +9,7 @@ import androidx.core.view.WindowInsetsControllerCompat
 import com.example.launcher.R
 import com.example.launcher.widgets.MatrixBackgroundView
 import android.content.Intent
+import android.content.pm.PackageManager
 import android.content.pm.ResolveInfo
 import android.provider.Settings
 import androidx.core.graphics.alpha
@@ -61,13 +62,44 @@ class HomeActivity : AppCompatActivity() {
         }
     }
 
-    // --- NEW FUNCTION to load apps ---
+//    // --- NEW FUNCTION to load apps ---
+//    private fun loadApps(): List<AppInfo> {
+//        val pm = packageManager
+//        val mainIntent = Intent(Intent.ACTION_MAIN, null).apply {
+//            addCategory(Intent.CATEGORY_LAUNCHER)
+//        }
+//        val resolveInfos: List<ResolveInfo> = pm.queryIntentActivities(mainIntent, 0)
+//
+//        val appsList = ArrayList<AppInfo>()
+//        for (info in resolveInfos) {
+//            appsList.add(
+//                AppInfo(
+//                    label = info.loadLabel(pm),
+//                    packageName = info.activityInfo.packageName,
+//                    icon = info.loadIcon(pm)
+//                )
+//            )
+//        }
+//        // Sort the list alphabetically
+//        appsList.sortBy { it.label.toString().lowercase() }
+//        return appsList
+//    }
+
+
+
     private fun loadApps(): List<AppInfo> {
         val pm = packageManager
-        val mainIntent = Intent(Intent.ACTION_MAIN, null).apply {
+        val mainIntent = Intent(Intent.ACTION_MAIN).apply {
             addCategory(Intent.CATEGORY_LAUNCHER)
         }
-        val resolveInfos: List<ResolveInfo> = pm.queryIntentActivities(mainIntent, 0)
+
+        // Use the new ResolveInfoFlags API (requires API 33+)
+        val resolveInfos: List<ResolveInfo> = if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.TIRAMISU) {
+            pm.queryIntentActivities(mainIntent, PackageManager.ResolveInfoFlags.of(0))
+        } else {
+            @Suppress("DEPRECATION")
+            pm.queryIntentActivities(mainIntent, 0)
+        }
 
         val appsList = ArrayList<AppInfo>()
         for (info in resolveInfos) {
@@ -79,10 +111,11 @@ class HomeActivity : AppCompatActivity() {
                 )
             )
         }
-        // Sort the list alphabetically
+
         appsList.sortBy { it.label.toString().lowercase() }
         return appsList
     }
+
 
 
 

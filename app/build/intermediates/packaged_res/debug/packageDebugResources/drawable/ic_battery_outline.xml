@@ -1,16 +1,47 @@
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
-    android:width="30dp"
-    android:height="10dp"
-    android:viewportWidth="25"
-    android:viewportHeight="10">
+    android:width="50dp"
+    android:height="20dp"
+    android:viewportWidth="50"
+    android:viewportHeight="20">
 
-    <!-- Battery body -->
+    <!-- Battery outline with circular corners -->
     <path
-        android:fillColor="@android:color/transparent"
-        android:strokeColor="@color/matrix_green"
-        android:strokeWidth=".2"
-        android:pathData="M1,1 h20 a2,2 0 0 1 2,2 v6 a2,2 0 0 1 -2,2 h-20 a2,2 0 0 1 -2,-2 v-6 a2,2 0 0 1 2,-2z" />
+        android:pathData="
+            M2,2
+            h46
+            a8,8 0 0 1 8,8
+            v0
+            a8,8 0 0 1 -8,8
+            h-46
+            a8,8 0 0 1 -8,-8
+            v0
+            a8,8 0 0 1 8,-8
+            z" />
 
+    <!-- Battery positive terminal -->
     <path
-        android:fillColor="@color/matrix_green" />
+        android:fillColor="#00FF00"
+        android:pathData="M50,7 h2 v6 h-2 z" />
+
+    <!-- Outline for all segments -->
+    <path
+        android:strokeColor="#FF0000"
+        android:strokeWidth=".5"
+        android:pathData="M4,4 h8 v12 h-8 z" />
+    <path
+        android:strokeColor="#FF6600"
+        android:strokeWidth=".5"
+        android:pathData="M13,4 h8 v12 h-8 z" />
+    <path
+        android:strokeColor="#FFFF00"
+        android:strokeWidth=".5"
+        android:pathData="M22,4 h8 v12 h-8 z" />
+    <path
+        android:strokeColor="#99FF00"
+        android:strokeWidth=".5"
+        android:pathData="M31,4 h8 v12 h-8 z" />
+    <path
+        android:strokeColor="#00FF00"
+        android:strokeWidth=".5"
+        android:pathData="M40,4 h8 v12 h-8 z" />
 </vector>

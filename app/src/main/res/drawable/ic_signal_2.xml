@@ -1,14 +1,22 @@
-<!-- File: app/src/main/res/drawable/ic_signal_2.xml -->
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
-    android:width="14dp"
-    android:height="5dp"
-    android:viewportWidth="15"
-    android:viewportHeight="15">
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- First two dots filled -->
     <path
-        android:fillColor="@color/matrix_green"
-        android:pathData="M12.01,12L2,22h10.01z"/>
+        android:fillColor="#00FF00"
+        android:pathData="
+            M3,12 a1.2,1.2 0 1,0 2.4,0 a1.2,1.2 0 1,0 -2.4,0
+            M8,12 a1.2,1.2 0 1,0 2.4,0 a1.2,1.2 0 1,0 -2.4,0
+        "/>
+    <!-- Remaining dots outlined -->
     <path
-        android:pathData="M2,22h20V2L2,22z"
-        android:fillAlpha="0.3"
-        android:fillColor="@color/matrix_dark_green"/>
+        android:strokeColor="#00FF00"
+        android:strokeWidth=".2"
+        android:pathData="
+            M13,12 a1.2,1.2 0 1,0 2.4,0 a1.2,1.2 0 1,0 -2.4,0
+            M18,12 a1.2,1.2 0 1,0 2.4,0 a1.2,1.2 0 1,0 -2.4,0
+        "/>
 </vector>

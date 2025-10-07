@@ -1,6 +1,7 @@
 package com.example.launcher.widgets
 
 import android.content.Context
+import android.os.Build
 import android.telephony.SubscriptionManager
 import android.telephony.TelephonyManager
 import android.util.AttributeSet
@@ -9,6 +10,7 @@ import android.view.LayoutInflater
 import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
+import androidx.annotation.RequiresApi
 import com.example.launcher.R
 
 // --- FIX: RENAME THIS CLASS ---
@@ -38,10 +40,12 @@ class FuturisticStatusBarView @JvmOverloads constructor(
             percent >= 70 -> R.drawable.battery_fill_75
             percent >= 40 -> R.drawable.battery_fill_50
             percent >= 20 -> R.drawable.battery_fill_25
-            else -> R.drawable.battery_fill_10
+            percent >= 10 -> R.drawable.battery_fill_10
+            else -> R.drawable.ic_battery_outline
         }
     }
 
+    @RequiresApi(Build.VERSION_CODES.LOLLIPOP_MR1)
     private fun setupNetworks() {
         container.removeAllViews()
 
@@ -57,7 +61,6 @@ class FuturisticStatusBarView @JvmOverloads constructor(
                 val signalStrength = if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.Q) {
                     teleMgr.createForSubscriptionId(subInfo.subscriptionId).signalStrength?.level ?: 0
                 } else {
-                    @Suppress("DEPRECATION")
                     teleMgr.signalStrength?.level ?: 0
                 }
                 addNetworkItem(subInfo.displayName.toString(), signalStrength)
@@ -66,23 +69,17 @@ class FuturisticStatusBarView @JvmOverloads constructor(
     }
 
     private fun addNetworkItem(carrier: String, level: Int) {
-//        val item = LinearLayout(context).apply {
-//            orientation = HORIZONTAL
-//            gravity = Gravity.CENTER_VERTICAL
-//            layoutParams = LayoutParams(0, LayoutParams.WRAP_CONTENT, 1f)
-//            setPadding(8, 0, 8, 0)
-//        }
         val item = LinearLayout(context).apply {
             orientation = HORIZONTAL
             gravity = Gravity.CENTER_VERTICAL
-            // Change LayoutParams to wrap content, which packs items together
+//            layoutParams = LayoutParams(0, LayoutParams.WRAP_CONTENT, 1f)
             layoutParams = LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT)
             setPadding(8, 0, 8, 0)
         }
 
         val name = TextView(context).apply {
             text = carrier
-            setTextColor(0xFFFFFFFF.toInt())
+            setTextColor(0xFF39FF14.toInt()) // Neon green
             textSize = 12f
         }
 

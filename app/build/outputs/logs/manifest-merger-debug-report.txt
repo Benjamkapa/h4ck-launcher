@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:2:1-76:12
-INJECTED from C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:2:1-76:12
-INJECTED from C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:2:1-76:12
-INJECTED from C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:2:1-76:12
+ADDED from C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:2:1-78:12
+INJECTED from C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:2:1-78:12
+INJECTED from C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:2:1-78:12
+INJECTED from C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:2:1-78:12
 MERGED from [com.google.android.material:material:1.9.0] C:\Users\icore\.gradle\caches\8.12\transforms\1332777c1fe29784cc62d650f4d528c3\transformed\material-1.9.0\AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\icore\.gradle\caches\8.12\transforms\a6670a488e795c0d9e662c867c999547\transformed\constraintlayout-2.1.4\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat-resources:1.6.1] C:\Users\icore\.gradle\caches\8.12\transforms\41b6de665f78463b58e7a31f57a9d92f\transformed\jetified-appcompat-resources-1.6.1\AndroidManifest.xml:17:1-22:12
@@ -46,37 +46,39 @@ MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\icore\.gradle\ca
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\icore\.gradle\caches\8.12\transforms\6fbc35f0e0413042b771d0ae67806d78\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\icore\.gradle\caches\8.12\transforms\63b6ab02500d2954b9b860db65c2f20b\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
 	package
-		ADDED from C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:2:11-41
+		ADDED from C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:3:5-35
 		INJECTED from C:\PROJECTS\arc\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\PROJECTS\arc\app\src\main\AndroidManifest.xml
+	xmlns:tools
+		ADDED from C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:2:11-57
 	android:versionCode
 		INJECTED from C:\PROJECTS\arc\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:3:5-63
+		ADDED from C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:4:5-63
 uses-permission#android.permission.READ_PHONE_STATE
-ADDED from C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:5:5-75
+ADDED from C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:6:5-75
 	android:name
-		ADDED from C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:5:22-72
+		ADDED from C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:6:22-72
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:6:5-79
+ADDED from C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:7:5-79
 	android:name
-		ADDED from C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:6:22-76
+		ADDED from C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:7:22-76
 queries
-ADDED from C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:32:5-37:15
+ADDED from C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:33:5-38:15
 intent#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:33:9-36:18
+ADDED from C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:34:9-37:18
 action#android.intent.action.MAIN
-ADDED from C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:34:13-65
+ADDED from C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:35:13-65
 	android:name
-		ADDED from C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:34:21-62
+		ADDED from C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:35:21-62
 category#android.intent.category.LAUNCHER
-ADDED from C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:35:13-73
+ADDED from C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:36:13-73
 	android:name
-		ADDED from C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:35:23-70
+		ADDED from C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:36:23-70
 application
-ADDED from C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:39:5-74:19
-INJECTED from C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:39:5-74:19
+ADDED from C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:40:5-76:19
+INJECTED from C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:40:5-76:19
 MERGED from [com.google.android.material:material:1.9.0] C:\Users\icore\.gradle\caches\8.12\transforms\1332777c1fe29784cc62d650f4d528c3\transformed\material-1.9.0\AndroidManifest.xml:24:5-20
 MERGED from [com.google.android.material:material:1.9.0] C:\Users\icore\.gradle\caches\8.12\transforms\1332777c1fe29784cc62d650f4d528c3\transformed\material-1.9.0\AndroidManifest.xml:24:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\icore\.gradle\caches\8.12\transforms\a6670a488e795c0d9e662c867c999547\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
@@ -96,55 +98,57 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\icore\.gradle\cach
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.10.1] C:\Users\icore\.gradle\caches\8.12\transforms\82c2ec3920d31b743bab84b710de0fbd\transformed\core-1.10.1\AndroidManifest.xml:28:18-86
 	android:label
-		ADDED from C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:41:9-31
+		ADDED from C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:42:9-31
 	android:icon
-		ADDED from C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:42:9-43
+		ADDED from C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:43:9-43
 	android:allowBackup
-		ADDED from C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:40:9-35
+		ADDED from C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:41:9-35
 	android:theme
-		ADDED from C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:43:9-40
+		ADDED from C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:44:9-40
 activity#com.example.launcher.presentation.splash.SplashActivity
-ADDED from C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:45:9-56:20
+ADDED from C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:46:9-57:20
 	android:exported
-		ADDED from C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:48:13-36
+		ADDED from C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:49:13-36
 	android:theme
-		ADDED from C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:47:13-47
+		ADDED from C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:48:13-47
 	android:name
-		ADDED from C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:46:13-63
+		ADDED from C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:47:13-63
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.DEFAULT+category:name:android.intent.category.HOME+category:name:android.intent.category.LAUNCHER
-ADDED from C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:50:13-55:29
+ADDED from C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:51:13-56:29
 category#android.intent.category.DEFAULT
-ADDED from C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:53:17-76
+ADDED from C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:54:17-76
 	android:name
-		ADDED from C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:53:27-73
+		ADDED from C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:54:27-73
 category#android.intent.category.HOME
-ADDED from C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:54:17-73
+ADDED from C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:55:17-73
 	android:name
-		ADDED from C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:54:27-70
+		ADDED from C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:55:27-70
 activity#com.example.launcher.presentation.home.HomeActivity
-ADDED from C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:58:9-61:39
+ADDED from C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:59:9-62:39
 	android:exported
-		ADDED from C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:61:13-36
+		ADDED from C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:62:13-36
 	android:theme
-		ADDED from C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:60:13-45
+		ADDED from C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:61:13-45
 	android:name
-		ADDED from C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:59:13-59
+		ADDED from C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:60:13-59
 service#com.example.launcher.services.ArcNotificationListener
-ADDED from C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:64:9-72:19
+ADDED from C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:65:9-74:19
 	android:label
-		ADDED from C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:66:13-56
+		ADDED from C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:67:13-56
 	android:exported
-		ADDED from C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:68:13-36
+		ADDED from C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:69:13-36
 	android:permission
-		ADDED from C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:67:13-87
+		ADDED from C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:68:13-87
+	tools:targetApi
+		ADDED from C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:70:13-33
 	android:name
-		ADDED from C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:65:13-61
+		ADDED from C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:66:13-61
 intent-filter#action:name:android.service.notification.NotificationListenerService
-ADDED from C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:69:13-71:29
+ADDED from C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:71:13-73:29
 action#android.service.notification.NotificationListenerService
-ADDED from C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:70:17-99
+ADDED from C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:72:17-99
 	android:name
-		ADDED from C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:70:25-96
+		ADDED from C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:72:25-96
 uses-sdk
 INJECTED from C:\PROJECTS\arc\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\PROJECTS\arc\app\src\main\AndroidManifest.xml
