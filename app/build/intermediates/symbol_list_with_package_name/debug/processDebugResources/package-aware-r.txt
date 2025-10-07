@@ -3138,6 +3138,7 @@ id center_vertical
 id chain
 id chain2
 id chains
+id charging_icon
 id checkbox
 id checked
 id chronometer

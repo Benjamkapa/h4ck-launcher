@@ -1,4 +1,4 @@
-#Tue Oct 07 21:29:48 EAT 2025
+#Tue Oct 07 22:06:20 EAT 2025
 base.0=C\:\\PROJECTS\\arc\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 base.1=C\:\\PROJECTS\\arc\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
 base.2=C\:\\PROJECTS\\arc\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\11\\classes.dex

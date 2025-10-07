@@ -40,22 +40,20 @@
             tools:text="10:30:00" />
 
         <ImageView
-            android:layout_width="18dp"
+            android:id="@+id/charging_icon"
+            android:layout_width="28dp"
             android:layout_height="18dp"
+            android:layout_marginEnd="4dp"
             android:src="@drawable/ic_charging"
             android:visibility="gone"
-            tools:visibility="visible"
-            android:layout_marginEnd="4dp"
-            android:contentDescription="@null"
-        />
+            tools:visibility="visible" />
 
         <!-- Battery Icon -->
         <ImageView
             android:id="@+id/battery_icon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="10dp"
-            android:contentDescription="TODO" />
+            android:layout_marginEnd="10dp" />
 
     </LinearLayout>
 

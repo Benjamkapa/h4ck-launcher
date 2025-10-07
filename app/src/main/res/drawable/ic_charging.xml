@@ -14,7 +14,7 @@
     <!-- Lightning Core -->
     <path
         android:name="core"
-        android:fillColor="#00FF88"
+        android:fillColor="@color/matrix_green"
         android:strokeWidth="0.5"
         android:pathData="M12,2 L6,11 L10,11 L8.5,22 L18,9 L13,9 L14.5,2 Z" />
 </vector>
