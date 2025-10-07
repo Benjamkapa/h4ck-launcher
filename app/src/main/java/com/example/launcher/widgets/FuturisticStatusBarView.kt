@@ -66,10 +66,17 @@ class FuturisticStatusBarView @JvmOverloads constructor(
     }
 
     private fun addNetworkItem(carrier: String, level: Int) {
+//        val item = LinearLayout(context).apply {
+//            orientation = HORIZONTAL
+//            gravity = Gravity.CENTER_VERTICAL
+//            layoutParams = LayoutParams(0, LayoutParams.WRAP_CONTENT, 1f)
+//            setPadding(8, 0, 8, 0)
+//        }
         val item = LinearLayout(context).apply {
             orientation = HORIZONTAL
             gravity = Gravity.CENTER_VERTICAL
-            layoutParams = LayoutParams(0, LayoutParams.WRAP_CONTENT, 1f)
+            // Change LayoutParams to wrap content, which packs items together
+            layoutParams = LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT)
             setPadding(8, 0, 8, 0)
         }
 

@@ -54,7 +54,7 @@
         android:debuggable="true"
         android:extractNativeLibs="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="iMKAPA"
+        android:label="H4(K3R"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity
@@ -75,15 +75,15 @@
             android:theme="@style/HomeTheme" />
 
         <!-- Inside the <application> tag -->
-        <!-- <service -->
-        <!-- android:name=".services.ArcNotificationListener" -->
-        <!-- android:label="iMKAPA Notification Service" -->
-        <!-- android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE" -->
-        <!-- android:exported="true">   &lt;!&ndash; Must be true from Android 12+ &ndash;&gt; -->
-        <!-- <intent-filter> -->
-        <!-- <action android:name="android.service.notification.NotificationListenerService" /> -->
-        <!-- </intent-filter> -->
-        <!-- </service> -->
+        <service
+            android:name="com.example.launcher.services.ArcNotificationListener"
+            android:exported="true"
+            android:label="iMKAPA Notification Service"
+            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE" > <!-- Must be true from Android 12+ -->
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService" />
+            </intent-filter>
+        </service>
 
         <provider
             android:name="androidx.startup.InitializationProvider"

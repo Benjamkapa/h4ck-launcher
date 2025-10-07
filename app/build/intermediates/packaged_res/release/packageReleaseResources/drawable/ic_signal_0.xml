@@ -1,0 +1,11 @@
+<!-- File: app/src/main/res/drawable/ic_signal_0.xml -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="14dp"
+    android:height="5dp"
+    android:viewportWidth="15"
+    android:viewportHeight="15">
+    <path
+        android:pathData="M2,22h20V2L2,22z"
+        android:fillAlpha="0.3"
+        android:fillColor="@color/matrix_dark_green"/>
+</vector>

@@ -3336,7 +3336,6 @@ id navigation_bar_item_large_label_view
 id navigation_bar_item_small_label_view
 id navigation_header_container
 id network_container
-id network_status_bar
 id never
 id neverCompleteToEnd
 id neverCompleteToStart
@@ -3478,6 +3477,7 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
+id text_clock
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon

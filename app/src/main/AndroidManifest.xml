@@ -38,7 +38,7 @@
 
     <application
         android:allowBackup="true"
-        android:label="iMKAPA"
+        android:label="H4(K3R"
         android:icon="@mipmap/ic_launcher"
         android:theme="@style/AppTheme">
 
@@ -61,15 +61,15 @@
             android:exported="true" />
 
         <!-- Inside the <application> tag -->
-<!--        <service-->
-<!--            android:name=".services.ArcNotificationListener"-->
-<!--            android:label="iMKAPA Notification Service"-->
-<!--            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE"-->
-<!--            android:exported="true">   &lt;!&ndash; Must be true from Android 12+ &ndash;&gt;-->
-<!--            <intent-filter>-->
-<!--                <action android:name="android.service.notification.NotificationListenerService" />-->
-<!--            </intent-filter>-->
-<!--        </service>-->
+        <service
+            android:name=".services.ArcNotificationListener"
+            android:label="iMKAPA Notification Service"
+            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE"
+            android:exported="true">   <!-- Must be true from Android 12+ -->
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService" />
+            </intent-filter>
+        </service>
 
     </application>
 

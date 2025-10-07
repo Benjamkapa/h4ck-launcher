@@ -24,7 +24,7 @@ id futuristic_status_bar
 id home_root
 id matrix_background_view
 id network_container
-id network_status_bar
+id text_clock
 layout activity_home
 layout activity_splash
 layout app_item

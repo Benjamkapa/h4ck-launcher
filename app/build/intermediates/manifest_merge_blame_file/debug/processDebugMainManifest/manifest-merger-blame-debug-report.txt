@@ -73,7 +73,7 @@
 55        android:extractNativeLibs="true"
 56        android:icon="@mipmap/ic_launcher"
 56-->C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:42:9-43
-57        android:label="iMKAPA"
+57        android:label="H4(K3R"
 57-->C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:41:9-31
 58        android:testOnly="true"
 59        android:theme="@style/AppTheme" >
@@ -113,15 +113,23 @@
 75-->C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:60:13-45
 76
 77        <!-- Inside the <application> tag -->
-78        <!-- <service -->
-79        <!-- android:name=".services.ArcNotificationListener" -->
-80        <!-- android:label="iMKAPA Notification Service" -->
-81        <!-- android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE" -->
-82        <!-- android:exported="true">   &lt;!&ndash; Must be true from Android 12+ &ndash;&gt; -->
-83        <!-- <intent-filter> -->
-84        <!-- <action android:name="android.service.notification.NotificationListenerService" /> -->
-85        <!-- </intent-filter> -->
-86        <!-- </service> -->
+78        <service
+78-->C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:64:9-72:19
+79            android:name="com.example.launcher.services.ArcNotificationListener"
+79-->C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:65:13-61
+80            android:exported="true"
+80-->C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:68:13-36
+81            android:label="iMKAPA Notification Service"
+81-->C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:66:13-56
+82            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE" > <!-- Must be true from Android 12+ -->
+82-->C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:67:13-87
+83            <intent-filter>
+83-->C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:69:13-71:29
+84                <action android:name="android.service.notification.NotificationListenerService" />
+84-->C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:70:17-99
+84-->C:\PROJECTS\arc\app\src\main\AndroidManifest.xml:70:25-96
+85            </intent-filter>
+86        </service>
 87
 88        <provider
 88-->[androidx.emoji2:emoji2:1.2.0] C:\Users\icore\.gradle\caches\8.12\transforms\5a3e187a3b955b34a5ea9a96336ab051\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20

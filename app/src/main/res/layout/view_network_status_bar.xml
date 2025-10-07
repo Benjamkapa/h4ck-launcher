@@ -1,38 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/network_status_bar"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="40dp"
-    android:orientation="horizontal"
-    android:padding="6dp"
+    android:layout_height="match_parent"
     android:gravity="center_vertical"
-    android:background="@android:color/transparent">
+    android:orientation="horizontal"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp">
 
-    <!-- LEFT SPACER / can hold time/date if needed -->
-    <View
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="1" />
-
-
-    <!-- Network info container -->
+    <!-- Left side: Network Indicators -->
     <LinearLayout
         android:id="@+id/network_container"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginStart="20dp"
+        android:gravity="start|center_vertical"
+        android:orientation="horizontal" />
+
+    <!-- Right side: Time and Battery -->
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center_vertical" />
+        android:gravity="end|center_vertical"
+        android:orientation="horizontal">
 
-    <!-- Battery icon -->
-    <ImageView
-        android:id="@+id/battery_icon"
-        android:layout_width="25dp"
-        android:layout_height="10dp"
-        android:layout_gravity="center_vertical"
-        android:layout_marginEnd="20dp"
-        android:background="@color/matrix_dark_green" />
+        <!-- Time (Clock) -->
+        <TextClock
+            android:id="@+id/text_clock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="25dp"
+            android:format12Hour="h:mm a"
+            android:format24Hour="HH:mm:ss"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            tools:text="10:30:00" />
+
+        <!-- Battery Icon -->
+        <ImageView
+            android:id="@+id/battery_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="40dp"
+            tools:src="@drawable/battery_fill_100" />
+
+    </LinearLayout>
 
 </LinearLayout>
+
+
+
 
 
 
@@ -59,25 +77,34 @@
 <!--    android:layout_height="40dp"-->
 <!--    android:orientation="horizontal"-->
 <!--    android:padding="6dp"-->
-<!--    android:gravity="center_vertical" >-->
+<!--    android:gravity="center_vertical"-->
+<!--    android:background="@android:color/transparent">-->
 
+<!--    &lt;!&ndash; LEFT SPACER / can hold time/date if needed &ndash;&gt;-->
+<!--    <View-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_weight="1" />-->
+
+
+<!--    &lt;!&ndash; Network info container &ndash;&gt;-->
 <!--    <LinearLayout-->
 <!--        android:id="@+id/network_container"-->
-<!--        android:layout_width="match_parent"-->
+<!--        android:layout_width="wrap_content"-->
 <!--        android:layout_height="wrap_content"-->
 <!--        android:orientation="horizontal"-->
-<!--        android:gravity="center"-->
-<!--        android:weightSum="3">-->
-<!--    </LinearLayout>-->
+<!--        android:gravity="center_vertical" />-->
 
+<!--    &lt;!&ndash; Battery icon &ndash;&gt;-->
 <!--    <ImageView-->
 <!--        android:id="@+id/battery_icon"-->
-<!--        android:layout_width="28dp"-->
-<!--        android:layout_height="14dp"-->
+<!--        android:layout_width="25dp"-->
+<!--        android:layout_height="10dp"-->
 <!--        android:layout_gravity="center_vertical"-->
-<!--        android:layout_marginEnd="8dp"-->
+<!--        android:layout_marginEnd="20dp"-->
 <!--        android:background="@color/matrix_dark_green" />-->
 
-
 <!--</LinearLayout>-->
+
+
 

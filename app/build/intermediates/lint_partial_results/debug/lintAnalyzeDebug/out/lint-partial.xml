@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 8.10.1" type="partial_results">
+    <map id="UnsafeImplicitIntentLaunch">
+            <map id="actionsSent">
+                    <map id="android.settings.ACTION_NOTIFICATION_LISTENER_SETTINGS (used to start an activity)">
+                        <location id="0"
+                            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/launcher/presentation/home/HomeActivity.kt"
+                            line="59"
+                            column="26"
+                            startOffset="2266"
+                            endLine="59"
+                            endColumn="90"
+                            endOffset="2330"/>
+                    </map>
+                    <map id="com.example.launcher.SEND_NOTIFICATIONS (used to send a broadcast)">
+                        <location id="0"
+                            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/launcher/services/ArcNotificationListener.kt"
+                            line="51"
+                            column="22"
+                            startOffset="1919"
+                            endLine="51"
+                            endColumn="55"
+                            endOffset="1952"/>
+                    </map>
+            </map>
+    </map>
+    <map id="UnsafeIntentLaunch">
+            <map id="unprotected">
+                <entry
+                    name="com.example.launcher.presentation.home.HomeActivity"
+                    boolean="true"/>
+                <entry
+                    name="com.example.launcher.presentation.splash.SplashActivity"
+                    boolean="true"/>
+            </map>
+    </map>
+    <map id="UnusedResources">
+        <location id="R.color.white"
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/colors.xml"
+            line="6"
+            column="12"
+            startOffset="218"
+            endLine="6"
+            endColumn="24"
+            endOffset="230"/>
+        <location id="R.drawable.ic_battery_outline"
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/drawable/ic_battery_outline.xml"
+            line="1"
+            column="1"
+            startOffset="0"
+            endLine="16"
+            endColumn="10"
+            endOffset="559"/>
+        <location id="R.drawable.network_bar_background"
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/drawable/network_bar_background.xml"
+            line="1"
+            column="1"
+            startOffset="0"
+            endLine="6"
+            endColumn="9"
+            endOffset="274"/>
+        <entry
+            name="model"
+            string="attr[actionBarSize(R)],color[matrix_green(U),matrix_dark_green(U),matrix_background(U),white(D)],drawable[battery_fill_10(U),battery_fill_100(U),battery_fill_25(U),battery_fill_50(U),battery_fill_75(U),ic_battery_outline(D),ic_signal_0(U),ic_signal_1(U),ic_signal_2(U),ic_signal_3(U),ic_signal_4(U),network_bar_background(D)],id[home_root(D),matrix_background_view(U),app_list_rv(U),futuristic_status_bar(D),app_icon_iv(U),app_name_tv(U),network_status_bar(D),network_container(U),battery_icon(U)],layout[activity_home(U),activity_splash(U),app_item(U),view_network_status_bar(U)],mipmap[ic_launcher(U),ic_launcher_foreground(U),ic_launcher_background(U),ic_launcher_monochrome(U)],string[splash_text(U)],style[AppTheme(U),SplashTheme(U),HomeTheme(U),Theme_AppCompat_DayNight_NoActionBar(R),Theme_AppCompat_NoActionBar(R)];a^1,b^2,c^1^2,d^1^2,e^1^2,f^1,1a^3^0,1b^22^1f,1c^1e,1d^2,1e^20^1f^21,23^26^3^1,24^23^3,25^27^2;;;"/>
+    </map>
+
+</incidents>

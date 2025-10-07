@@ -1,151 +1,163 @@
 [
     {
-        "merged": "com.example.launcher.app-debug-4:/mipmap-xxhdpi_ic_launcher_background.png.flat",
-        "source": "com.example.launcher.app-main-6:/mipmap-xxhdpi/ic_launcher_background.png"
+        "merged": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-debug-4:\\drawable_ic_signal_1.xml.flat",
+        "source": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-main-6:\\drawable\\ic_signal_1.xml"
     },
     {
-        "merged": "com.example.launcher.app-debug-4:/mipmap-xhdpi_ic_launcher_foreground.png.flat",
-        "source": "com.example.launcher.app-main-6:/mipmap-xhdpi/ic_launcher_foreground.png"
+        "merged": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-debug-4:\\mipmap-hdpi_ic_launcher_monochrome.png.flat",
+        "source": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-main-6:\\mipmap-hdpi\\ic_launcher_monochrome.png"
     },
     {
-        "merged": "com.example.launcher.app-debug-4:/mipmap-hdpi_ic_launcher.png.flat",
-        "source": "com.example.launcher.app-main-6:/mipmap-hdpi/ic_launcher.png"
+        "merged": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-debug-4:\\mipmap-xhdpi_ic_launcher_monochrome.png.flat",
+        "source": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-main-6:\\mipmap-xhdpi\\ic_launcher_monochrome.png"
     },
     {
-        "merged": "com.example.launcher.app-debug-4:/drawable_ic_signal_4.xml.flat",
-        "source": "com.example.launcher.app-main-6:/drawable/ic_signal_4.xml"
+        "merged": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-debug-4:\\mipmap-mdpi_ic_launcher_monochrome.png.flat",
+        "source": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-main-6:\\mipmap-mdpi\\ic_launcher_monochrome.png"
     },
     {
-        "merged": "com.example.launcher.app-debug-4:/layout-v23_activity_home.xml.flat",
-        "source": "com.example.launcher.app-main-6:/layout-v23/activity_home.xml"
+        "merged": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-debug-4:\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-main-6:\\mipmap-hdpi\\ic_launcher.png"
     },
     {
-        "merged": "com.example.launcher.app-debug-4:/layout_activity_home.xml.flat",
-        "source": "com.example.launcher.app-main-6:/layout/activity_home.xml"
+        "merged": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-debug-4:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-main-6:\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "com.example.launcher.app-debug-4:/mipmap-mdpi_ic_launcher_monochrome.png.flat",
-        "source": "com.example.launcher.app-main-6:/mipmap-mdpi/ic_launcher_monochrome.png"
+        "merged": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-debug-4:\\mipmap-xxhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-main-6:\\mipmap-xxhdpi\\ic_launcher_foreground.png"
     },
     {
-        "merged": "com.example.launcher.app-debug-4:/mipmap-hdpi_ic_launcher_background.png.flat",
-        "source": "com.example.launcher.app-main-6:/mipmap-hdpi/ic_launcher_background.png"
+        "merged": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-debug-4:\\drawable_ic_signal_3.xml.flat",
+        "source": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-main-6:\\drawable\\ic_signal_3.xml"
     },
     {
-        "merged": "com.example.launcher.app-debug-4:/drawable_battery_fill_75.xml.flat",
-        "source": "com.example.launcher.app-main-6:/drawable/battery_fill_75.xml"
+        "merged": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-debug-4:\\layout_activity_splash.xml.flat",
+        "source": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-main-6:\\layout\\activity_splash.xml"
     },
     {
-        "merged": "com.example.launcher.app-debug-4:/mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "com.example.launcher.app-main-6:/mipmap-xhdpi/ic_launcher.png"
+        "merged": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-debug-4:\\drawable_battery_fill_50.xml.flat",
+        "source": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-main-6:\\drawable\\battery_fill_50.xml"
     },
     {
-        "merged": "com.example.launcher.app-debug-4:/drawable_network_bar_background.xml.flat",
-        "source": "com.example.launcher.app-main-6:/drawable/network_bar_background.xml"
+        "merged": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-debug-4:\\mipmap-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-main-6:\\mipmap-xhdpi\\ic_launcher_foreground.png"
     },
     {
-        "merged": "com.example.launcher.app-debug-4:/layout_app_item.xml.flat",
-        "source": "com.example.launcher.app-main-6:/layout/app_item.xml"
+        "merged": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-debug-4:\\layout_view_network_status_bar.xml.flat",
+        "source": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-main-6:\\layout\\view_network_status_bar.xml"
     },
     {
-        "merged": "com.example.launcher.app-debug-4:/mipmap-hdpi_ic_launcher_monochrome.png.flat",
-        "source": "com.example.launcher.app-main-6:/mipmap-hdpi/ic_launcher_monochrome.png"
+        "merged": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-debug-4:\\mipmap-xxhdpi_ic_launcher_monochrome.png.flat",
+        "source": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-main-6:\\mipmap-xxhdpi\\ic_launcher_monochrome.png"
     },
     {
-        "merged": "com.example.launcher.app-debug-4:/drawable_ic_signal_1.xml.flat",
-        "source": "com.example.launcher.app-main-6:/drawable/ic_signal_1.xml"
+        "merged": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-debug-4:\\drawable_battery_fill_100.xml.flat",
+        "source": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-main-6:\\drawable\\battery_fill_100.xml"
     },
     {
-        "merged": "com.example.launcher.app-debug-4:/mipmap-hdpi_ic_launcher_foreground.png.flat",
-        "source": "com.example.launcher.app-main-6:/mipmap-hdpi/ic_launcher_foreground.png"
+        "merged": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-debug-4:\\mipmap-xxhdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-main-6:\\mipmap-xxhdpi\\ic_launcher_background.png"
     },
     {
-        "merged": "com.example.launcher.app-debug-4:/mipmap-mdpi_ic_launcher.png.flat",
-        "source": "com.example.launcher.app-main-6:/mipmap-mdpi/ic_launcher.png"
+        "merged": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-debug-4:\\mipmap-mdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-main-6:\\mipmap-mdpi\\ic_launcher_foreground.png"
     },
     {
-        "merged": "com.example.launcher.app-debug-4:/drawable_ic_signal_3.xml.flat",
-        "source": "com.example.launcher.app-main-6:/drawable/ic_signal_3.xml"
+        "merged": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-debug-4:\\drawable_battery_fill_10.xml.flat",
+        "source": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-main-6:\\drawable\\battery_fill_10.xml"
     },
     {
-        "merged": "com.example.launcher.app-debug-4:/drawable_battery_fill_50.xml.flat",
-        "source": "com.example.launcher.app-main-6:/drawable/battery_fill_50.xml"
+        "merged": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-debug-4:\\layout_app_item.xml.flat",
+        "source": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-main-6:\\layout\\app_item.xml"
     },
     {
-        "merged": "com.example.launcher.app-debug-4:/mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "com.example.launcher.app-main-6:/mipmap-xxhdpi/ic_launcher.png"
+        "merged": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-debug-4:\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-main-6:\\mipmap-xxxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "com.example.launcher.app-debug-4:/mipmap-mdpi_ic_launcher_foreground.png.flat",
-        "source": "com.example.launcher.app-main-6:/mipmap-mdpi/ic_launcher_foreground.png"
+        "merged": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-debug-4:\\layout_activity_home.xml.flat",
+        "source": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-main-6:\\layout\\activity_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-debug-4:\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-main-6:\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-debug-4:\\drawable_ic_signal_4.xml.flat",
+        "source": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-main-6:\\drawable\\ic_signal_4.xml"
+    },
+    {
+        "merged": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-debug-4:\\mipmap-xhdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-main-6:\\mipmap-xhdpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-debug-4:\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-main-6:\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-debug-4:\\mipmap-hdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-main-6:\\mipmap-hdpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-debug-4:\\drawable_ic_signal_0.xml.flat",
+        "source": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-main-6:\\drawable\\ic_signal_0.xml"
+    },
+    {
+        "merged": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-debug-4:\\mipmap-xxxhdpi_ic_launcher_monochrome.png.flat",
+        "source": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-main-6:\\mipmap-xxxhdpi\\ic_launcher_monochrome.png"
+    },
+    {
+        "merged": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-debug-4:\\mipmap-mdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-main-6:\\mipmap-mdpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-debug-4:\\drawable_ic_battery_outline.xml.flat",
+        "source": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-main-6:\\drawable\\ic_battery_outline.xml"
     },
     {
         "merged": "com.example.launcher.app-debug-4:/drawable_battery_fill_100.xml.flat",
         "source": "com.example.launcher.app-main-6:/drawable/battery_fill_100.xml"
     },
     {
-        "merged": "com.example.launcher.app-debug-4:/mipmap-mdpi_ic_launcher_background.png.flat",
-        "source": "com.example.launcher.app-main-6:/mipmap-mdpi/ic_launcher_background.png"
+        "merged": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-debug-4:\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-main-6:\\mipmap-xhdpi\\ic_launcher.png"
     },
     {
-        "merged": "com.example.launcher.app-debug-4:/mipmap-xxhdpi_ic_launcher_monochrome.png.flat",
-        "source": "com.example.launcher.app-main-6:/mipmap-xxhdpi/ic_launcher_monochrome.png"
+        "merged": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-debug-4:\\drawable_ic_signal_2.xml.flat",
+        "source": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-main-6:\\drawable\\ic_signal_2.xml"
     },
     {
-        "merged": "com.example.launcher.app-debug-4:/layout_view_network_status_bar.xml.flat",
-        "source": "com.example.launcher.app-main-6:/layout/view_network_status_bar.xml"
+        "merged": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-debug-4:\\drawable_network_bar_background.xml.flat",
+        "source": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-main-6:\\drawable\\network_bar_background.xml"
     },
     {
-        "merged": "com.example.launcher.app-debug-4:/mipmap-xxhdpi_ic_launcher_foreground.png.flat",
-        "source": "com.example.launcher.app-main-6:/mipmap-xxhdpi/ic_launcher_foreground.png"
+        "merged": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-debug-4:\\drawable_battery_fill_25.xml.flat",
+        "source": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-main-6:\\drawable\\battery_fill_25.xml"
     },
     {
         "merged": "com.example.launcher.app-debug-4:/drawable_battery_fill_10.xml.flat",
         "source": "com.example.launcher.app-main-6:/drawable/battery_fill_10.xml"
     },
     {
-        "merged": "com.example.launcher.app-debug-4:/drawable_ic_signal_0.xml.flat",
-        "source": "com.example.launcher.app-main-6:/drawable/ic_signal_0.xml"
+        "merged": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-debug-4:\\layout-v23_activity_home.xml.flat",
+        "source": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-main-6:\\layout-v23\\activity_home.xml"
     },
     {
-        "merged": "com.example.launcher.app-debug-4:/drawable_ic_battery_outline.xml.flat",
-        "source": "com.example.launcher.app-main-6:/drawable/ic_battery_outline.xml"
+        "merged": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-debug-4:\\mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-main-6:\\mipmap-xxxhdpi\\ic_launcher_foreground.png"
     },
     {
-        "merged": "com.example.launcher.app-debug-4:/mipmap-xhdpi_ic_launcher_background.png.flat",
-        "source": "com.example.launcher.app-main-6:/mipmap-xhdpi/ic_launcher_background.png"
+        "merged": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-debug-4:\\mipmap-hdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-main-6:\\mipmap-hdpi\\ic_launcher_foreground.png"
     },
     {
-        "merged": "com.example.launcher.app-debug-4:/mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "com.example.launcher.app-main-6:/mipmap-xxxhdpi/ic_launcher.png"
+        "merged": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-debug-4:\\drawable_battery_fill_75.xml.flat",
+        "source": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-main-6:\\drawable\\battery_fill_75.xml"
     },
     {
-        "merged": "com.example.launcher.app-debug-4:/layout_activity_splash.xml.flat",
-        "source": "com.example.launcher.app-main-6:/layout/activity_splash.xml"
-    },
-    {
-        "merged": "com.example.launcher.app-debug-4:/drawable_ic_signal_2.xml.flat",
-        "source": "com.example.launcher.app-main-6:/drawable/ic_signal_2.xml"
-    },
-    {
-        "merged": "com.example.launcher.app-debug-4:/mipmap-xhdpi_ic_launcher_monochrome.png.flat",
-        "source": "com.example.launcher.app-main-6:/mipmap-xhdpi/ic_launcher_monochrome.png"
-    },
-    {
-        "merged": "com.example.launcher.app-debug-4:/mipmap-xxxhdpi_ic_launcher_monochrome.png.flat",
-        "source": "com.example.launcher.app-main-6:/mipmap-xxxhdpi/ic_launcher_monochrome.png"
-    },
-    {
-        "merged": "com.example.launcher.app-debug-4:/mipmap-xxxhdpi_ic_launcher_background.png.flat",
-        "source": "com.example.launcher.app-main-6:/mipmap-xxxhdpi/ic_launcher_background.png"
-    },
-    {
-        "merged": "com.example.launcher.app-debug-4:/mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
-        "source": "com.example.launcher.app-main-6:/mipmap-xxxhdpi/ic_launcher_foreground.png"
-    },
-    {
-        "merged": "com.example.launcher.app-debug-4:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "com.example.launcher.app-main-6:/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-debug-4:\\mipmap-xxxhdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\icore\\.gradle\\daemon\\8.12\\com.example.launcher.app-main-6:\\mipmap-xxxhdpi\\ic_launcher_background.png"
     },
     {
         "merged": "com.example.launcher.app-debug-4:/drawable_battery_fill_25.xml.flat",

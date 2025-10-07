@@ -1,0 +1,604 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 8.10.1" type="conditional_incidents">
+
+    <incident
+        id="MissingPermission"
+        severity="error"
+        message="Call requires permission which may be rejected by user: code should explicitly check to see if permission is available (with `checkPermission`) or explicitly handle a potential `SecurityException`">
+        <fix-data missing="android.permission.READ_PHONE_STATE" requirement="android.permission.READ_PHONE_STATE"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/launcher/widgets/FuturisticStatusBarView.kt"
+            line="51"
+            column="29"
+            startOffset="1851"
+            endLine="51"
+            endColumn="62"
+            endOffset="1884"/>
+    </incident>
+
+    <incident
+        id="InlinedApi"
+        severity="warning"
+        message="">
+        <fix-data minSdk="21-∞" requiresApi="22-∞"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/launcher/widgets/FuturisticStatusBarView.kt"
+            line="48"
+            column="47"
+            startOffset="1665"
+            endLine="48"
+            endColumn="85"
+            endOffset="1703"/>
+        <map>
+            <entry
+                name="message"
+                string="Field requires API level 22 (current min is %1$s): `android.content.Context#TELEPHONY_SUBSCRIPTION_SERVICE`"/>
+            <api-levels id="minSdk"
+                value="21-∞"/>
+            <entry
+                name="name"
+                string="TELEPHONY_SUBSCRIPTION_SERVICE"/>
+            <entry
+                name="owner"
+                string="android.content.Context"/>
+            <api-levels id="requiresApi"
+                value="22-∞"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data minSdk="21-∞" requiresApi="22-∞"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/launcher/widgets/FuturisticStatusBarView.kt"
+            line="48"
+            column="90"
+            startOffset="1708"
+            endLine="48"
+            endColumn="109"
+            endOffset="1727"/>
+        <map>
+            <entry
+                name="message"
+                string="Class requires API level 22 (current min is %1$s): `android.telephony.SubscriptionManager`"/>
+            <api-levels id="minSdk"
+                value="21-∞"/>
+            <entry
+                name="owner"
+                string="android.telephony.SubscriptionManager"/>
+            <api-levels id="requiresApi"
+                value="22-∞"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data minSdk="21-∞" requiresApi="22-∞"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/launcher/widgets/FuturisticStatusBarView.kt"
+            line="51"
+            column="36"
+            startOffset="1858"
+            endLine="51"
+            endColumn="62"
+            endOffset="1884"/>
+        <map>
+            <entry
+                name="desc"
+                string="()"/>
+            <entry
+                name="message"
+                string="Call requires API level 22 (current min is %1$s): `android.telephony.SubscriptionManager#getActiveSubscriptionInfoList`"/>
+            <api-levels id="minSdk"
+                value="21-∞"/>
+            <entry
+                name="name"
+                string="getActiveSubscriptionInfoList"/>
+            <entry
+                name="owner"
+                string="android.telephony.SubscriptionManager"/>
+            <api-levels id="requiresApi"
+                value="22-∞"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data minSdk="21-29" requiresApi="28-∞"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/launcher/widgets/FuturisticStatusBarView.kt"
+            line="61"
+            column="29"
+            startOffset="2358"
+            endLine="61"
+            endColumn="43"
+            endOffset="2372"/>
+        <map>
+            <entry
+                name="desc"
+                string="()"/>
+            <entry
+                name="message"
+                string="Call requires API level 28 (current min is %1$s): `android.telephony.TelephonyManager#getSignalStrength`"/>
+            <api-levels id="minSdk"
+                value="21-29"/>
+            <entry
+                name="name"
+                string="getSignalStrength"/>
+            <entry
+                name="owner"
+                string="android.telephony.TelephonyManager"/>
+            <api-levels id="requiresApi"
+                value="28-∞"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data minSdk="21-29" requiresApi="23-∞"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/launcher/widgets/FuturisticStatusBarView.kt"
+            line="61"
+            column="45"
+            startOffset="2374"
+            endLine="61"
+            endColumn="50"
+            endOffset="2379"/>
+        <map>
+            <entry
+                name="desc"
+                string="()"/>
+            <entry
+                name="message"
+                string="Call requires API level 23 (current min is %1$s): `android.telephony.SignalStrength#getLevel`"/>
+            <api-levels id="minSdk"
+                value="21-29"/>
+            <entry
+                name="name"
+                string="getLevel"/>
+            <entry
+                name="owner"
+                string="android.telephony.SignalStrength"/>
+            <api-levels id="requiresApi"
+                value="23-∞"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data minSdk="21-∞" requiresApi="22-∞"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/launcher/widgets/FuturisticStatusBarView.kt"
+            line="63"
+            column="40"
+            startOffset="2442"
+            endLine="63"
+            endColumn="51"
+            endOffset="2453"/>
+        <map>
+            <entry
+                name="desc"
+                string="()"/>
+            <entry
+                name="message"
+                string="Call requires API level 22 (current min is %1$s): `android.telephony.SubscriptionInfo#getDisplayName`"/>
+            <api-levels id="minSdk"
+                value="21-∞"/>
+            <entry
+                name="name"
+                string="getDisplayName"/>
+            <entry
+                name="owner"
+                string="android.telephony.SubscriptionInfo"/>
+            <api-levels id="requiresApi"
+                value="22-∞"/>
+        </map>
+    </incident>
+
+    <incident
+        id="CustomSplashScreen"
+        severity="warning"
+        message="The application should not provide its own launch screen">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/launcher/presentation/splash/SplashActivity.kt"
+            line="10"
+            column="7"
+            startOffset="275"
+            endLine="10"
+            endColumn="21"
+            endOffset="289"/>
+        <map>
+            <condition targetGE="31"/>
+        </map>
+    </incident>
+
+    <incident
+        id="QueryPermissionsNeeded"
+        severity="warning"
+        message="Consider adding a `&lt;queries>` declaration to your manifest when calling this method; see https://g.co/dev/packagevisibility for details">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/launcher/presentation/home/HomeActivity.kt"
+            line="70"
+            column="50"
+            startOffset="2674"
+            endLine="70"
+            endColumn="71"
+            endOffset="2695"/>
+        <map>
+            <entry
+                name="queryAll"
+                boolean="false"/>
+        </map>
+    </incident>
+
+    <incident
+        id="VectorRaster"
+        severity="warning"
+        message="">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/drawable/ic_battery_outline.xml"
+            line="9"
+            column="28"
+            startOffset="254"
+            endLine="9"
+            endColumn="54"
+            endOffset="280"/>
+        <map>
+            <entry
+                name="containsFillType"
+                boolean="false"/>
+            <entry
+                name="containsGradient"
+                boolean="false"/>
+            <entry
+                name="folderVersion"
+                int="-1"/>
+            <entry
+                name="message"
+                string="Resource references will not work correctly in images generated for this vector icon for API &lt; %1$d; check generated icon to make sure it looks acceptable"/>
+        </map>
+    </incident>
+
+    <incident
+        id="VectorRaster"
+        severity="warning"
+        message="">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/drawable/ic_battery_outline.xml"
+            line="10"
+            column="30"
+            startOffset="312"
+            endLine="10"
+            endColumn="49"
+            endOffset="331"/>
+        <map>
+            <entry
+                name="containsFillType"
+                boolean="false"/>
+            <entry
+                name="containsGradient"
+                boolean="false"/>
+            <entry
+                name="folderVersion"
+                int="-1"/>
+            <entry
+                name="message"
+                string="Resource references will not work correctly in images generated for this vector icon for API &lt; %1$d; check generated icon to make sure it looks acceptable"/>
+        </map>
+    </incident>
+
+    <incident
+        id="VectorRaster"
+        severity="warning"
+        message="">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/drawable/ic_battery_outline.xml"
+            line="15"
+            column="28"
+            startOffset="525"
+            endLine="15"
+            endColumn="47"
+            endOffset="544"/>
+        <map>
+            <entry
+                name="containsFillType"
+                boolean="false"/>
+            <entry
+                name="containsGradient"
+                boolean="false"/>
+            <entry
+                name="folderVersion"
+                int="-1"/>
+            <entry
+                name="message"
+                string="Resource references will not work correctly in images generated for this vector icon for API &lt; %1$d; check generated icon to make sure it looks acceptable"/>
+        </map>
+    </incident>
+
+    <incident
+        id="VectorRaster"
+        severity="warning"
+        message="">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/drawable/ic_signal_0.xml"
+            line="10"
+            column="28"
+            startOffset="360"
+            endLine="10"
+            endColumn="52"
+            endOffset="384"/>
+        <map>
+            <entry
+                name="containsFillType"
+                boolean="false"/>
+            <entry
+                name="containsGradient"
+                boolean="false"/>
+            <entry
+                name="folderVersion"
+                int="-1"/>
+            <entry
+                name="message"
+                string="Resource references will not work correctly in images generated for this vector icon for API &lt; %1$d; check generated icon to make sure it looks acceptable"/>
+        </map>
+    </incident>
+
+    <incident
+        id="VectorRaster"
+        severity="warning"
+        message="">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/drawable/ic_signal_1.xml"
+            line="8"
+            column="28"
+            startOffset="282"
+            endLine="8"
+            endColumn="47"
+            endOffset="301"/>
+        <map>
+            <entry
+                name="containsFillType"
+                boolean="false"/>
+            <entry
+                name="containsGradient"
+                boolean="false"/>
+            <entry
+                name="folderVersion"
+                int="-1"/>
+            <entry
+                name="message"
+                string="Resource references will not work correctly in images generated for this vector icon for API &lt; %1$d; check generated icon to make sure it looks acceptable"/>
+        </map>
+    </incident>
+
+    <incident
+        id="VectorRaster"
+        severity="warning"
+        message="">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/drawable/ic_signal_1.xml"
+            line="13"
+            column="28"
+            startOffset="473"
+            endLine="13"
+            endColumn="52"
+            endOffset="497"/>
+        <map>
+            <entry
+                name="containsFillType"
+                boolean="false"/>
+            <entry
+                name="containsGradient"
+                boolean="false"/>
+            <entry
+                name="folderVersion"
+                int="-1"/>
+            <entry
+                name="message"
+                string="Resource references will not work correctly in images generated for this vector icon for API &lt; %1$d; check generated icon to make sure it looks acceptable"/>
+        </map>
+    </incident>
+
+    <incident
+        id="VectorRaster"
+        severity="warning"
+        message="">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/drawable/ic_signal_2.xml"
+            line="8"
+            column="28"
+            startOffset="282"
+            endLine="8"
+            endColumn="47"
+            endOffset="301"/>
+        <map>
+            <entry
+                name="containsFillType"
+                boolean="false"/>
+            <entry
+                name="containsGradient"
+                boolean="false"/>
+            <entry
+                name="folderVersion"
+                int="-1"/>
+            <entry
+                name="message"
+                string="Resource references will not work correctly in images generated for this vector icon for API &lt; %1$d; check generated icon to make sure it looks acceptable"/>
+        </map>
+    </incident>
+
+    <incident
+        id="VectorRaster"
+        severity="warning"
+        message="">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/drawable/ic_signal_2.xml"
+            line="13"
+            column="28"
+            startOffset="472"
+            endLine="13"
+            endColumn="52"
+            endOffset="496"/>
+        <map>
+            <entry
+                name="containsFillType"
+                boolean="false"/>
+            <entry
+                name="containsGradient"
+                boolean="false"/>
+            <entry
+                name="folderVersion"
+                int="-1"/>
+            <entry
+                name="message"
+                string="Resource references will not work correctly in images generated for this vector icon for API &lt; %1$d; check generated icon to make sure it looks acceptable"/>
+        </map>
+    </incident>
+
+    <incident
+        id="VectorRaster"
+        severity="warning"
+        message="">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/drawable/ic_signal_3.xml"
+            line="8"
+            column="28"
+            startOffset="282"
+            endLine="8"
+            endColumn="47"
+            endOffset="301"/>
+        <map>
+            <entry
+                name="containsFillType"
+                boolean="false"/>
+            <entry
+                name="containsGradient"
+                boolean="false"/>
+            <entry
+                name="folderVersion"
+                int="-1"/>
+            <entry
+                name="message"
+                string="Resource references will not work correctly in images generated for this vector icon for API &lt; %1$d; check generated icon to make sure it looks acceptable"/>
+        </map>
+    </incident>
+
+    <incident
+        id="VectorRaster"
+        severity="warning"
+        message="">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/drawable/ic_signal_3.xml"
+            line="13"
+            column="28"
+            startOffset="465"
+            endLine="13"
+            endColumn="52"
+            endOffset="489"/>
+        <map>
+            <entry
+                name="containsFillType"
+                boolean="false"/>
+            <entry
+                name="containsGradient"
+                boolean="false"/>
+            <entry
+                name="folderVersion"
+                int="-1"/>
+            <entry
+                name="message"
+                string="Resource references will not work correctly in images generated for this vector icon for API &lt; %1$d; check generated icon to make sure it looks acceptable"/>
+        </map>
+    </incident>
+
+    <incident
+        id="VectorRaster"
+        severity="warning"
+        message="">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/drawable/ic_signal_4.xml"
+            line="8"
+            column="28"
+            startOffset="282"
+            endLine="8"
+            endColumn="47"
+            endOffset="301"/>
+        <map>
+            <entry
+                name="containsFillType"
+                boolean="false"/>
+            <entry
+                name="containsGradient"
+                boolean="false"/>
+            <entry
+                name="folderVersion"
+                int="-1"/>
+            <entry
+                name="message"
+                string="Resource references will not work correctly in images generated for this vector icon for API &lt; %1$d; check generated icon to make sure it looks acceptable"/>
+        </map>
+    </incident>
+
+    <incident
+        id="ObsoleteSdkInt"
+        severity="warning"
+        message="Unnecessary; `SDK_INT` is always >= 23">
+        <fix-replace
+            description="Delete @RequiresApi"
+            replacement=""
+            priority="0">
+            <range
+                file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/launcher/services/ArcNotificationListener.kt"
+                startOffset="462"
+                endOffset="497"/>
+        </fix-replace>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/launcher/services/ArcNotificationListener.kt"
+            line="14"
+            column="1"
+            startOffset="462"
+            endLine="14"
+            endColumn="36"
+            endOffset="497"/>
+        <map>
+            <condition minGE="23-∞"/>
+        </map>
+    </incident>
+
+    <incident
+        id="ObsoleteSdkInt"
+        severity="warning"
+        message="Unnecessary; `SDK_INT` is always >= 27">
+        <fix-replace
+            description="Delete tools:targetApi"
+            replacement=""
+            priority="0">
+            <range
+                file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/styles.xml"
+                startOffset="707"
+                endOffset="730"/>
+        </fix-replace>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/styles.xml"
+            line="16"
+            column="62"
+            startOffset="707"
+            endLine="16"
+            endColumn="85"
+            endOffset="730"/>
+        <map>
+            <condition minGE="27-∞"/>
+        </map>
+    </incident>
+
+</incidents>

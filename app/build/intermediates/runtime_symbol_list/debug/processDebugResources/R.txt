@@ -3335,7 +3335,6 @@ int id navigation_bar_item_large_label_view 0x7f080136
 int id navigation_bar_item_small_label_view 0x7f080137
 int id navigation_header_container 0x7f080138
 int id network_container 0x7f080139
-int id network_status_bar 0x7f08013a
 int id never 0x7f08013b
 int id neverCompleteToEnd 0x7f08013c
 int id neverCompleteToStart 0x7f08013d
@@ -3477,6 +3476,7 @@ int id textSpacerNoButtons 0x7f0801c4
 int id textSpacerNoTitle 0x7f0801c5
 int id textStart 0x7f0801c6
 int id textTop 0x7f0801c7
+int id text_clock 0x7f0801f8
 int id text_input_end_icon 0x7f0801c8
 int id text_input_error_icon 0x7f0801c9
 int id text_input_start_icon 0x7f0801ca
